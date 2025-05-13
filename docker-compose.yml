@@ -1,0 +1,58 @@
+services:
+  postgres:
+    image: postgres:15
+    restart: always
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+    ports:
+      - '5432:5432'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres -d postgres']
+      interval: 5s
+      timeout: 2s
+      retries: 20
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    command: postgres -c listen_addresses='*'
+    logging:
+      options:
+        max-size: '10m'
+        max-file: '3'
+    networks:
+      - app
+
+  backend:
+    build:
+      dockerfile: Dockerfile
+      context: ./server
+      target: dev
+    restart: 'unless-stopped'
+    env_file:
+      - server/.env
+    image: hrm-backend
+    ports:
+      - 4010:4010
+    depends_on:
+      - postgres
+    networks:
+      - nginx
+      - app
+
+  frontend:
+    build:
+      target: stage
+      context: ./client
+    image: hrm-frontend
+    restart: unless-stopped
+    ports:
+      - 3000:3100
+    container_name: hrm-app
+    networks:
+      - nginx
+
+networks:
+  nginx:
+    external: true
+  app:
