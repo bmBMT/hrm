@@ -8,7 +8,6 @@ import ForgotPasswordPage from "../components/LoginComponents/ForgotPasswordPage
 import PasswordResetPage from "../components/LoginComponents/PassswordResetPage.jsx";
 import SetNewPasword from "../components/LoginComponents/SetNewPassword.jsx";
 import ServerErrorPage from "../components/Error/ServerErrorPage.js";
-import SingupPage from "../components/LoginComponents/SingupPage.js";
 import PageContext from "../context/PageContext.js";
 
 function LandingPage() {
@@ -23,7 +22,7 @@ function LandingPage() {
       {pageContext.page.forgotPassword && <ForgotPasswordPage />}
       {pageContext.page.resetPassword && <PasswordResetPage />}
       {pageContext.page.newPassword && <SetNewPasword />}
-      {pageContext.page.signup && <SingupPage />}
+      {pageContext.page.signup && <LoginPage />}
       {pageContext.page.networkError && <ServerErrorPage />}
      </>
   )
