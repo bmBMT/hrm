@@ -33,7 +33,7 @@ services:
       - server/.env
     image: hrm-backend
     ports:
-      - 4010:4010
+      - 4010:4000
     depends_on:
       - postgres
     networks:
@@ -47,12 +47,12 @@ services:
     image: hrm-frontend
     restart: unless-stopped
     ports:
-      - 3000:3100
+      - 3100:3000
     container_name: hrm-app
     networks:
       - nginx
 
 networks:
   nginx:
-    external: true
+    # external: true
   app:
