@@ -108,7 +108,7 @@ export default function FilterButton(props) {
       startIcon={<TuneIcon />}
       onClick={handleClick}
     >
-      Customize
+      Кастомизировать
     </FormattedButton>
   </Box>
   {columns.length > 0 && (

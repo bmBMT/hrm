@@ -57,8 +57,8 @@ export default function EditSurveyQuestionPopup({question, update, close, style}
                     alignItems="center"
                     spacing={1}
                 >
-                    <HRMButton mode="primary" onClick={() => update(newQuestion)}>Update</HRMButton>
-                    <HRMButton mode="secondaryB" onClick={close}>Cancel</HRMButton>
+                    <HRMButton mode="primary" onClick={() => update(newQuestion)}>Обновить</HRMButton>
+                    <HRMButton mode="secondaryB" onClick={close}>Отмена</HRMButton>
                 </Stack>
             </Stack>
         </Box>

@@ -87,7 +87,7 @@ export default function SurveyResponses({responseList, style}) {
                 sx={{marginBottom: "20px"}}
             >
                 <TextField 
-                    placeholder="Search employee name" 
+                    placeholder="Имя сотрудника" 
                     size="small" 
                     value={filterName}
                     onChange={(e) => setFilterName(e.target.value)}
@@ -133,8 +133,8 @@ export default function SurveyResponses({responseList, style}) {
                     {/*Table header*/}
                     <TableHead>
                         <TableRow sx={{backgroundColor: "#F9FAFB"}}>
-                            <TableHeaderCell><b>Name</b></TableHeaderCell>
-                            <TableHeaderCell colSpan={2}><b>Team</b></TableHeaderCell>
+                            <TableHeaderCell><b>Имя</b></TableHeaderCell>
+                            <TableHeaderCell colSpan={2}><b>Отдел</b></TableHeaderCell>
                         </TableRow>
                     </TableHead>
                     {/*Employee entries*/}

@@ -98,22 +98,22 @@ export default function PermissionsTable({ contentList, style, open }) {
         <TableHead>
           <TableRow sx={{ backgroundColor: "#F9FAFB" }}>
             <TableHeaderCell key="Name">
-              <TextHeader>Name</TextHeader>
+              <TextHeader>Название</TextHeader>
             </TableHeaderCell>
             <TableHeaderCell key="Role">
-              <TextHeader>Role</TextHeader>
+              <TextHeader>Роль</TextHeader>
             </TableHeaderCell>
             <TableHeaderCell key="Team">
-              <TextHeader>Team</TextHeader>
+              <TextHeader>Комманда</TextHeader>
             </TableHeaderCell>
             <TableHeaderCell key="Admin">
-              <TextHeader>Admin</TextHeader>
+              <TextHeader>Администратор</TextHeader>
             </TableHeaderCell>
             <TableHeaderCell key="Manager">
-              <TextHeader>Manager</TextHeader>
+              <TextHeader>Менеджер</TextHeader>
             </TableHeaderCell>
             <TableHeaderCell key="Employee">
-              <TextHeader>Employee</TextHeader>
+              <TextHeader>Сотрудник</TextHeader>
             </TableHeaderCell>
           </TableRow>
         </TableHead>

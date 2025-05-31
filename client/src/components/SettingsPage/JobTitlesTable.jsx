@@ -53,10 +53,10 @@ export default function JobTitlesTable({ jobTitles, style }) {
         <TableHead>
           <TableRow sx={{ backgroundColor: "#F9FAFB" }}>
             <TableHeaderCell sx={{ width: "50%", paddingLeft: "25px" }}>
-              <TextHeader>Name</TextHeader>
+              <TextHeader>Название</TextHeader>
             </TableHeaderCell>
             <TableHeaderCell>
-              <TextHeader>People</TextHeader>
+              <TextHeader>Кол-во</TextHeader>
             </TableHeaderCell>
             <TableHeaderCell></TableHeaderCell>
           </TableRow>
@@ -78,7 +78,7 @@ export default function JobTitlesTable({ jobTitles, style }) {
                   justifyContent="flex-start"
                 >
                   <HRMButton mode="tertiary">
-                    <b>Delete</b>
+                    <b>Удалить</b>
                   </HRMButton>
                   <HRMButton mode="tertiary">
                     <a

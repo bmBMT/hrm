@@ -130,8 +130,8 @@ export default function CustomDialog({
         open: true,
         severity: "success",
         message: addAction
-          ? "Department created successfully"
-          : "Department edited successfully",
+          ? "Отдел был создан"
+          : "Отдел был изменен",
       });
     }
   };
@@ -143,8 +143,8 @@ export default function CustomDialog({
       open: true,
       severity: "error",
       message: addAction
-        ? "Failed to add department"
-        : "Failed to edit department",
+        ? "Ошибка создания отдела"
+        : "Ошибка редактирования отдела",
     });
   };
 
@@ -180,7 +180,7 @@ export default function CustomDialog({
         setToast({
           open: true,
           severity: "success",
-          message: "Department deleted successfully",
+          message: "Отдел был удален",
         });
       })
       .catch((error) => {
@@ -189,7 +189,7 @@ export default function CustomDialog({
         setToast({
           open: true,
           severity: "error",
-          message: "Failed to delete department",
+          message: "Ошибка при удалении отдела",
         });
       });
 
@@ -273,10 +273,10 @@ export default function CustomDialog({
               fullWidth
               color="secondary"
               {...register("departmentName", {
-                required: "Department name is required.",
+                required: "Название отедла обязательное.",
                 minLength: {
                   value: 2,
-                  message: "Department name must be at least 2 characters.",
+                  message: "Название отдела должно содержать более 2 символов.",
                 },
               })}
               error={!!errors.departmentName}
@@ -294,7 +294,7 @@ export default function CustomDialog({
             sx={{ marginTop: "50px" }}
           >
             <HRMButton mode="secondaryB" onClick={onClose} color="primary">
-              Cancel
+              Отмена
             </HRMButton>
             <HRMButton
               mode="primary"
@@ -302,7 +302,7 @@ export default function CustomDialog({
                 deleteAction ? handleDataSubmit : handleSubmit(handleDataSubmit)
               }
             >
-              Save
+              Сохранить
             </HRMButton>
           </Stack>
         </form>

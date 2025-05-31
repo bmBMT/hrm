@@ -65,10 +65,10 @@ export default function DepartmentsTable({ openDialog, departments, style }) {
         <TableHead>
           <TableRow sx={{ backgroundColor: "#F9FAFB" }}>
             <TableHeaderCell sx={{ width: "50%", paddingLeft: "25px" }}>
-              <TextHeader>Name</TextHeader>
+              <TextHeader>Название</TextHeader>
             </TableHeaderCell>
             <TableHeaderCell>
-              <TextHeader>People</TextHeader>
+              <TextHeader>Кол-во</TextHeader>
             </TableHeaderCell>
             <TableHeaderCell></TableHeaderCell>
           </TableRow>
@@ -91,7 +91,7 @@ export default function DepartmentsTable({ openDialog, departments, style }) {
                   <DeleteButton
                     onClick={() => openDialog(department, "delete")}
                   >
-                    <b>Delete</b>
+                    <b>Удалить</b>
                   </DeleteButton>
                   <EditButton onClick={() => openDialog(department, "edit")}>
                     Редактировать

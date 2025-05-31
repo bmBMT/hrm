@@ -71,7 +71,7 @@ export default function JobTitlesTabContent({ style }) {
           )}
         </>
       ) : (
-        <p>There is no job titles right now.</p>
+        <p>Должности отсутствуют.</p>
       )}
     </Box>
   );

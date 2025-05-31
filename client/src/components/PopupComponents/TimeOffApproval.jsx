@@ -123,47 +123,47 @@ export default function TimeOffApproval({request_information, close, refresh, st
                     </StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Name</b></StyledTD>
+                    <StyledTD><b>Имя</b></StyledTD>
                     <StyledTD>{request_information.name}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Role</b></StyledTD>
+                    <StyledTD><b>Роль</b></StyledTD>
                     <StyledTD>{request_information.role}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Email</b></StyledTD>
+                    <StyledTD><b>Эл. почта</b></StyledTD>
                     <StyledTD>{request_information.email}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Office</b></StyledTD>
+                    <StyledTD><b>Офис</b></StyledTD>
                     <StyledTD>{request_information.office}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Effective date</b></StyledTD>
+                    <StyledTD><b>Дата начала работы</b></StyledTD>
                     <StyledTD>{request_information.effectiveDate}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Time off balance</b></StyledTD>
+                    <StyledTD><b>Время работы</b></StyledTD>
                     <StyledTD>{request_information.timeOffBalance}</StyledTD>
                 </tr>
             </table>
             <table style={{width: "100%"}}>
                 <tr>
-                    <StyledTD><b>Time off requested</b></StyledTD>
+                    <StyledTD><b>Запрошен отгул</b></StyledTD>
                     <StyledTD>{request_information.timeOffRequested}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Requested days total</b></StyledTD>
+                    <StyledTD><b>Кол-во запрошенных отгулов</b></StyledTD>
                     <StyledTD>{request_information.requestedDaysTotal}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Time-off category</b></StyledTD>
+                    <StyledTD><b>Категория отгула</b></StyledTD>
                     <StyledTD>{request_information.timeOffCategory}</StyledTD>
                 </tr>
             </table>
             {/*Admin's notes*/}
             <Box sx={{display: "flex", flexDirection: "column"}}>
-                <b style={{marginTop: "40px", marginBottom: "15px"}}>Your Notes</b>
+                <b style={{marginTop: "40px", marginBottom: "15px"}}>Ваши заметки</b>
                 <TextField 
                     rows={4} 
                     multiline 
@@ -178,13 +178,13 @@ export default function TimeOffApproval({request_information, close, refresh, st
             </Box>
             {/*Reject, approve or close*/}
             {request_information.status === "Declined" && 
-                <b style={{color: "#D92D20", marginBottom: "30px"}}>Time off request has been rejected</b>}
+                <b style={{color: "#D92D20", marginBottom: "30px"}}>Запрос на отгул был отклонен</b>}
             {request_information.status === "Approved" &&
-                <b style={{color: "#079455", marginBottom: "30px"}}>Time off request has been approved</b>}
+                <b style={{color: "#079455", marginBottom: "30px"}}>Запрос на отгул был одобрен</b>}
             {request_information.status === "Deleting" && 
-                <b style={{color: "#5D6B98", marginBottom: "30px"}}>Employee is requesting to delete this time off request</b>}
+                <b style={{color: "#5D6B98", marginBottom: "30px"}}>Работник запросил отменить отгул</b>}
             {request_information.status === "Cancelled" && 
-                <b style={{color: "#5D6B98", marginBottom: "30px"}}>Time off request has been deleted</b>}
+                <b style={{color: "#5D6B98", marginBottom: "30px"}}>Запрос на отгул был отменен</b>}
             <Stack 
                 direction="row" 
                 alignItems="center" 
@@ -194,10 +194,10 @@ export default function TimeOffApproval({request_information, close, refresh, st
                 {(request_information.status === "Pending") ? 
                     <>
                         <HRMButton mode="tertiary" onClick={close}>Cancel</HRMButton>
-                        <HRMButton mode="error" onClick={() => resolveRequest("Declined")}>Reject</HRMButton>
-                        <HRMButton mode="primary" onClick={() => resolveRequest("Approved")}>Approve</HRMButton>
+                        <HRMButton mode="error" onClick={() => resolveRequest("Declined")}>Отклонить</HRMButton>
+                        <HRMButton mode="primary" onClick={() => resolveRequest("Approved")}>Одобрить</HRMButton>
                     </> :
-                    <HRMButton mode="tertiary" onClick={close}>Close</HRMButton>}
+                    <HRMButton mode="tertiary" onClick={close}>Закрыть</HRMButton>}
             </Stack>
         </Box>
     );

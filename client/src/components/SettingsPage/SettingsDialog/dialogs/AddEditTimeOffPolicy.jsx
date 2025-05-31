@@ -50,7 +50,7 @@ export const AddEditTimeOffPolicy = ({ form, action, selectedItem }) => {
 
   return (
     <>
-      <TextLabel>{action === "add" ? "Name" : "New name"}</TextLabel>
+      <TextLabel>{action === "add" ? "Название" : "Новое название"}</TextLabel>
       <TextField
         size="small"
         fullWidth
@@ -62,7 +62,7 @@ export const AddEditTimeOffPolicy = ({ form, action, selectedItem }) => {
           className: errors[fieldName] ? "error" : "",
         }}
       />
-      <TextLabel sx={{ marginTop: "24px" }}>Default balance</TextLabel>
+      <TextLabel sx={{ marginTop: "24px" }}>Кол-во по умолчанию</TextLabel>
       <Stack
         direction="row"
         alignItems="center"

@@ -1,14 +1,14 @@
 [
-  { "name": "Account Manager", "selected": false },
-  { "name": "Business Developer", "selected": false },
-  { "name": "Chief Executive Officer", "selected": false },
-  { "name": "Customer Success Manager", "selected": false },
-  { "name": "Customer Success Specialist", "selected": false },
-  { "name": "Finance Manager", "selected": false },
-  { "name": "Human Resources Manager", "selected": false },
-  { "name": "Marketing Manager", "selected": false },
-  { "name": "Marketing Specialist", "selected": false },
-  { "name": "Product Manager", "selected": false },
-  { "name": "Sales Manager", "selected": false },
-  { "name": "Sales Representative", "selected": false }
+  { "name": "Менеджер", "selected": false },
+  { "name": "Бизнес-разработчик", "selected": false },
+  { "name": "Генеральный директор (CEO)", "selected": false },
+  { "name": "Менеджер по работе с клиентами", "selected": false },
+  { "name": "Специалист по работе с клиентами", "selected": false },
+  { "name": "Финансовый менеджер", "selected": false },
+  { "name": "Менеджер по персоналу (HR)", "selected": false },
+  { "name": "Маркетинг-менеджер", "selected": false },
+  { "name": "Специалист по маркетингу", "selected": false },
+  { "name": "Продуктовый менеджер", "selected": false },
+  { "name": "Менеджер по продажам", "selected": false },
+  { "name": "Торговый представитель", "selected": false }
 ]

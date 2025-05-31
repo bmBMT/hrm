@@ -105,9 +105,9 @@ export default function ResponsePage({ style }) {
 
     //Labels for each survey step
     const steps = [
-        { label: "Start" },
-        { label: "Answer the questions" },
-        { label: "Finish" },
+        { label: "Начало" },
+        { label: "Ответы на вопросы" },
+        { label: "Конец" },
     ];
 
     return (
@@ -172,10 +172,10 @@ export default function ResponsePage({ style }) {
                     fontFamily: fonts.fontFamily
                 }}>
                     <h4 style={{ textAlign: "center" }}>
-                        Your responses have been saved
+                        Ваши ответы были сохранены
                     </h4>
                     <p style={{ textAlign: "center" }}>
-                        You can safely close this window and resume the survey later
+                        Вы можете безопасно закрыть окно и продолжить прохождени опроса позже
                     </p>
                 </Box>
             </Dialog>

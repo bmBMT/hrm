@@ -25,7 +25,7 @@ export const AddEditDepartment = ({ form, action, selectedItem }) => {
 
   return (
     <>
-      <TextLabel>{action === "add" ? "Name" : "New name"}</TextLabel>
+      <TextLabel>{action === "add" ? "Название" : "Новое название"}</TextLabel>
       <TextField
         size="small"
         fullWidth

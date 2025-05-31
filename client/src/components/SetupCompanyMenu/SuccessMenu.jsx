@@ -34,15 +34,15 @@ export default function SuccessMenu({style}) {
             {/*Text and image*/}
             <Stack spacing={3}>
                 <img style={{margin: "1em auto", width: "148px", height: "148px"}} src={SuccessImage} alt="Image" />
-                <h3>Well done!</h3>
-                <p>You have completed the initial setup</p>
+                <h3>Отлично!</h3>
+                <p>Вы завершили первоначальную настройку</p>
             </Stack>
             {/*Complete setup button*/}
             <HRMButton mode="primary" style={{
                 marginTop: "40px"
             }}
             onClick={handleClick}>
-                Dismiss and complete setup
+                Завершить настройку
             </HRMButton>
         </Box>
     );

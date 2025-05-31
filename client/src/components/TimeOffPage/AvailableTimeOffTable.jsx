@@ -42,9 +42,9 @@ export default function AvailableTimeOffTable({policies, style}) {
                 {/*Table header*/}
                 <TableHead>
                     <TableRow sx={{backgroundColor: "#F9FAFB"}}>
-                        <TableHeaderCell sx={{width: "50%", paddingLeft: "25px"}}><b>Policy type</b></TableHeaderCell>
-                        <TableHeaderCell><b>Available days</b></TableHeaderCell>
-                        <TableHeaderCell><b>Hours used</b></TableHeaderCell>
+                        <TableHeaderCell sx={{width: "50%", paddingLeft: "25px"}}><b>Политика выходных</b></TableHeaderCell>
+                        <TableHeaderCell><b>Доступно дней</b></TableHeaderCell>
+                        <TableHeaderCell><b>Использовано часов</b></TableHeaderCell>
                     </TableRow>
                 </TableHead>
                 {/*Policy information*/}
@@ -53,9 +53,9 @@ export default function AvailableTimeOffTable({policies, style}) {
                         <TableRow>
                             <TableBodyCell sx={{width: "50%", paddingLeft: "25px"}}><b>{policy.type}</b></TableBodyCell>
                             <TableBodyCell>
-                                {Math.floor(policy.availableHours / 8)} days ({policy.availableHours} hours) 
+                                {Math.floor(policy.availableHours / 8)} дней ({policy.availableHours} часов) 
                             </TableBodyCell>
-                            <TableBodyCell>{policy.hoursUsed} hours used</TableBodyCell>
+                            <TableBodyCell>{policy.hoursUsed} часов</TableBodyCell>
                         </TableRow>
                     ))}
                 </TableBody>

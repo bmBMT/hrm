@@ -167,7 +167,7 @@ export default function BoardTabContent({update, style}) {
                             /> 
                         }  
                     </> :
-                    <p>There is no upcoming time off right now.</p>
+                    <p>На данный момент у вас нет запланированных отпусков/отгулов.</p>
                 
             }
         </Box>

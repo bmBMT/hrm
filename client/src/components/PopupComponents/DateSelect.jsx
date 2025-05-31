@@ -67,14 +67,14 @@ export default function DateSelect({close, setDate, initialValue, style}) {
                         onClick={() => close()} 
                         style={{flex: 1}}
                     >
-                        Cancel
+                        Отмена
                     </HRMButton>
                     <HRMButton 
                         mode="primary" 
                         onClick={() => submit()} 
                         style={{flex: 1}}
                     >
-                        Apply
+                        Применить
                     </HRMButton>
                 </Stack>
             </List>

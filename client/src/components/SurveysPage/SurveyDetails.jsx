@@ -53,7 +53,7 @@ export default function SurveyDetails({survey, back, refresh, style}) {
                         }
                     }} 
                 />
-                <h3>Survey Details | {survey.name}</h3>
+                <h3>Детали опроса | {survey.name}</h3>
             </Stack>
             <Stack direction="row" alignItems="flex-start" spacing={2}>
                 {/*Info and Answers tabs*/}

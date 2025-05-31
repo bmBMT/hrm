@@ -1,38 +1,38 @@
 {
   "employmentType": [
     "",
-    "Apprenticeship",
-    "Casual employment",
-    "Contingent employment",
-    "Contract employment",
-    "Employment on commission",
-    "Full-time employment",
-    "Internship",
-    "Leased employment",
-    "Part-time employment",
-    "Probation",
-    "Seasonal employment",
-    "Traineeship"
+    "Стажировка / Обучение",
+    "Временная работа",
+    "Временное трудоустройство",
+    "Контрактная работа",
+    "Работа на комиссионных",
+    "Полная занятость",
+    "Интернатура",
+    "Аренда персонала (лизинг)",
+    "Частичная занятость",
+    "Испытательный срок",
+    "Сезонная работа",
+    "Ученичество"
   ],
   "compensationType": [
     "",
-    "Bonuses",
-    "Hourly compensation",
-    "Salary",
-    "Salary & commission",
-    "Total compensation"
+    "Бонусы",
+    "Почасовая оплата",
+    "Оклад",
+    "Оклад + комиссионные",
+    "Общий доход (включая бонусы и льготы)"
   ],
   "maritalStatus": [
     "",
-    "Married",
-    "Single",
-    "Divorced",
-    "Registered Partnership",
-    "Separated"
+    "Женат / Замужем",
+    "Холост / Не замужем",
+    "Разведен(а)",
+    "Зарегистрированное партнерство",
+    "В разводе (проживают отдельно)"
   ],
   "gender": [
     "",
-    "Female",
-    "Male"
+    "Женский",
+    "Мужской"
   ]
 }

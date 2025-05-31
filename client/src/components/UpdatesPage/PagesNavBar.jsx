@@ -99,9 +99,9 @@ export default function PagesNavBar({numOfEntries, currentPage, handlePage, styl
             borderRadius: "4px",
             fontFamily: fonts.fontFamily
         }, ...style}}>
-            <HRMButton mode="secondaryB" startIcon={<ArrowBackIcon />} onClick={() => handlePage(currentPage - 1)}>Previous</HRMButton>
+            <HRMButton mode="secondaryB" startIcon={<ArrowBackIcon />} onClick={() => handlePage(currentPage - 1)}>Назад</HRMButton>
             {pageButtons}
-            <HRMButton mode="secondaryB" endIcon={<ArrowForwardIcon />} onClick={() => handlePage(currentPage + 1)}>Next</HRMButton>
+            <HRMButton mode="secondaryB" endIcon={<ArrowForwardIcon />} onClick={() => handlePage(currentPage + 1)}>Далее</HRMButton>
         </Box>
     );
 };

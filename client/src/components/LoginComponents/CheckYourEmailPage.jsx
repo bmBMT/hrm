@@ -31,23 +31,17 @@ const CheckYourEmailPage = () => {
         <div className="logo-container">
           <img src={stateContext.state.logo} alt="logo" />
         </div>
-        <h2>Check Your Email</h2>
+        <h2>Проверьте вашу эл. почту</h2>
         <h3 style={{ margin: "0px" }}>{message}</h3>
         <h3
           style={{ marginTop: "5px", fontWeight: "bold", marginBottom: "10px" }}
         >
           {stateContext.state.email}
         </h3>
-        <button
-          className="create-account-button"
-          style={{ marginBottom: "30px" }}
-        >
-          Open email app
-        </button>
         <div className="sign-up-link">
-          Didn't receive the email?{" "}
+          Не получили письмо?{" "}
           <button className="button-forgot-password" onClick={handleResend}>
-            Click to resend
+            Отправить ещё раз
           </button>
         </div>
         <button
@@ -58,7 +52,7 @@ const CheckYourEmailPage = () => {
           }}
         >
           <ArrowBackIcon style={{ fontSize: "18px", marginRight: "5px" }} />
-          Back to log in
+          Вернуться на авторизацию
         </button>
       </div>
     </body>

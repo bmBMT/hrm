@@ -185,7 +185,7 @@ function CustomisedTableHead(props) {
             component="th"
             sx={customStyle("action", 30)}
           >
-            Action
+            Действие
           </TableCell>
         )}
       </TableRow>
@@ -267,7 +267,7 @@ export default function AppTable(props) {
   if (loading) {
     return (
       <NoContentComponent>
-        <p>Loading. Please wait...</p>
+        <p>Загрузка. Пожалуйста подождите...</p>
       </NoContentComponent>
     );
   }
@@ -275,7 +275,7 @@ export default function AppTable(props) {
     return (
       <Box sx={{ padding: 16 }}>
       <NoContentComponent>
-        <p>No data to display</p>
+        <p>Данные отсутствуют</p>
       </NoContentComponent>
       </Box>
     );

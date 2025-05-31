@@ -1,7 +1,6 @@
 import Box from "@mui/system/Box";
 import CustomTabs from "../tabs/CustomTabs";
 import ResultsTabContent from "./ResultsTabContent";
-import TemplatesTabContent from "./TemplatesTabContent";
 import { fonts } from "../../Styles";
 
 /**
@@ -14,7 +13,6 @@ import { fonts } from "../../Styles";
 export default function SurveysMenu({style}) {
     const tabs = [
         { label: "Результаты", child: <ResultsTabContent /> },
-        { label: "Шаблоны", child: <TemplatesTabContent />}
     ]
 
     return (

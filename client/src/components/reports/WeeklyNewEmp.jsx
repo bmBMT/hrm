@@ -285,7 +285,7 @@ function WeeklyNewEmp(props) {
 								transform: 'translateY(-50%) rotate(-90deg)',
 							}}
 						>
-							Weekly head counts
+							Еженедельная численность персонала
 						</Typography>
 					</Box>
 				</ThemeProvider>

@@ -38,8 +38,8 @@ const ForgotPasswordPage = () => {
         <div className="logo-container">
           <img src={stateContext.state.logo} alt="logo" />
         </div>
-        <h2 style={{ marginBottom: "0px" }}>Forgot password?</h2>
-        <h3>No worries, we'll send you reset instructions.</h3>
+        <h2 style={{ marginBottom: "0px" }}>Забыли пароль?</h2>
+        <h3>Не беспокойтесь, мы вышлем вам инструкции для сброса.</h3>
         {message && <div className="error-alert">{message}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -57,7 +57,7 @@ const ForgotPasswordPage = () => {
             className="create-account-button"
             disabled={!input || !validator.isEmail(input)}
           >
-            Reset password
+            Сбросить пароль
           </button>
         </form>
         <button
@@ -67,7 +67,7 @@ const ForgotPasswordPage = () => {
           }}
         >
           <ArrowBackIcon style={{ fontSize: "18px", marginRight: "5px" }} />
-          Back to log in
+          Вернуться на авторизацию
         </button>
       </div>
     </body>

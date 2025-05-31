@@ -74,43 +74,43 @@ export default function SurveyInfo({surveyInfo, refresh, style}) {
             {/*Survey content*/}
             <table style={{ width: "100%" }}>
                 <tr>
-                    <StyledTD><b>Welcome title</b></StyledTD>
+                    <StyledTD><b>Заголовок приветствия</b></StyledTD>
                     <StyledTD>{surveyInfo.welcomeTitle}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Welcome message</b></StyledTD>
+                    <StyledTD><b>Текст приветствия</b></StyledTD>
                     <StyledTD>
                         {
                             surveyInfo.welcomeMessage ? 
                             surveyInfo.welcomeMessage : 
-                            <i>No welcome message was provided</i>
+                            <i></i>
                         }
                     </StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>End title</b></StyledTD>
+                    <StyledTD><b>Заголовок завершения опроса</b></StyledTD>
                     <StyledTD>{surveyInfo.endTitle}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>End message</b></StyledTD>
+                    <StyledTD><b>Текст завершения опроса</b></StyledTD>
                     <StyledTD>
                         {
                             surveyInfo.endMessage ?
                             surveyInfo.endMessage :
-                            <i>No end message was provided</i>
+                            <i></i>
                         }
                     </StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Start date:</b></StyledTD>
+                    <StyledTD><b>Дата начала:</b></StyledTD>
                     <StyledTD>{formatDate(dayjs(surveyInfo.startedAt).toDate())}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Finish date:</b></StyledTD>
+                    <StyledTD><b>Дата окончания:</b></StyledTD>
                     <StyledTD>{formatDate(dayjs(surveyInfo.completedAt).toDate())}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Questions</b></StyledTD>
+                    <StyledTD><b>Вопросы</b></StyledTD>
                     <StyledTD>
                         <ol>
                             {surveyInfo.satisfactionSurveyQuestions.sort((q1, q2) => q1.orderNumber - q2.orderNumber).map((q) => (
@@ -120,7 +120,7 @@ export default function SurveyInfo({surveyInfo, refresh, style}) {
                     </StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Recipients</b></StyledTD>
+                    <StyledTD><b>Опрашиваемые</b></StyledTD>
                     <StyledTD>
                         <ul>
                             {surveyInfo.satisfactionSurveyRecipients.map((r) => (

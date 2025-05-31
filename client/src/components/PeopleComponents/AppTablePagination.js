@@ -24,7 +24,7 @@ const FormattedButton = styled(Button)(() => ({
 function previousButton() {
   return (
     <FormattedButton variant="outlined" startIcon={<ArrowBackOutlinedIcon />}>
-      Previous
+      Назад
     </FormattedButton>
   );
 }
@@ -36,7 +36,7 @@ function previousButton() {
 function nextButton() {
   return (
     <FormattedButton variant="outlined" endIcon={<ArrowForwardSharpIcon />}>
-      Next
+      Далее
     </FormattedButton>
   );
 }

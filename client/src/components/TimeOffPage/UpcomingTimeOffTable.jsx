@@ -91,24 +91,24 @@ export default function UpcomingTimeOffTable({
                     {/*Table header*/}
                     <TableHead>
                         <TableRow sx={{backgroundColor: "#F9FAFB"}}>
-                            {tableColumns.includes("Person") && <TableHeaderCell sx={{paddingLeft: "25px"}}><b>Person</b></TableHeaderCell>}
+                            {tableColumns.includes("Person") && <TableHeaderCell sx={{paddingLeft: "25px"}}><b>Сотрудник</b></TableHeaderCell>}
                             {tableColumns.includes("Person") ? 
-                                <TableHeaderCell><b>From</b></TableHeaderCell> :
-                                <TableHeaderCell sx={{paddingLeft: "25px"}}><b>From</b></TableHeaderCell>
+                                <TableHeaderCell><b>От</b></TableHeaderCell> :
+                                <TableHeaderCell sx={{paddingLeft: "25px"}}><b>От</b></TableHeaderCell>
                             }
-                            <TableHeaderCell><b>To</b></TableHeaderCell>
+                            <TableHeaderCell><b>До</b></TableHeaderCell>
                             {tableColumns.includes("Type") && 
-                                <TableHeaderCell><b>Type</b></TableHeaderCell>
+                                <TableHeaderCell><b>Тип</b></TableHeaderCell>
                             }
                             {tableColumns.includes("Amount") && 
-                                <TableHeaderCell><b>Amount</b></TableHeaderCell>
+                                <TableHeaderCell><b>Кол-во</b></TableHeaderCell>
                             }
                             {tableColumns.includes("Note") && 
                                 <TableHeaderCell colSpan={(tableColumns.includes("Status")) ? 1 : 2}>
-                                    <b>Note</b>
+                                    <b>Заметка</b>
                                 </TableHeaderCell>
                             }
-                            {tableColumns.includes("Status") && <TableHeaderCell colSpan={2}><b>Status</b></TableHeaderCell>}
+                            {tableColumns.includes("Status") && <TableHeaderCell colSpan={2}><b>Статус</b></TableHeaderCell>}
                             
                         </TableRow>
                     </TableHead>
@@ -134,7 +134,7 @@ export default function UpcomingTimeOffTable({
                                 {/*Time off category*/}
                                 {tableColumns.includes('Type') && <TableBodyCell>{period.type}</TableBodyCell>}
                                 {/*Time off amount*/}
-                                {tableColumns.includes('Amount') && <TableBodyCell>{period.hours} hours</TableBodyCell>}
+                                {tableColumns.includes('Amount') && <TableBodyCell>{period.hours} часов</TableBodyCell>}
                                 {/*Time off additional notes*/}
                                 {tableColumns.includes('Note') && <TableBodyCell>{period.note}</TableBodyCell>}
                                 {/*The status of the time off period*/}

@@ -49,7 +49,7 @@ export default function TimeOffDeleted({request_information, close, style}) {
                 justifyContent="space-between"
                 sx={{marginBottom: "40px"}}
             >
-                <h3>Your time off request has been deleted</h3>
+                <h3>Ваш запрос на отгул был отменен</h3>
                 <CloseIcon onClick={close} sx={{
                     backgroundColor: "#FFFFFF",
                     "&:hover": {
@@ -58,23 +58,23 @@ export default function TimeOffDeleted({request_information, close, style}) {
                     }
                 }}/>
             </Stack>
-            <h4 style={{marginBottom: "40px"}}>The following time off request was deleted:</h4>
+            <h4 style={{marginBottom: "40px"}}>Отслеживаемый запрос на отгул был отменен</h4>
             {/*Time off request details*/}
             <table style={{width: "100%", marginBottom: "40px"}}>
                 <tr>
-                    <StyledTD><b>Time off balance</b></StyledTD>
+                    <StyledTD><b>Время работы</b></StyledTD>
                     <StyledTD>{request_information.timeOffBalance}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Time off requested</b></StyledTD>
+                    <StyledTD><b>Запрос на отгул</b></StyledTD>
                     <StyledTD>{request_information.timeOffRequested}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Requested days total</b></StyledTD>
+                    <StyledTD><b>Кол-во запросов на отгул</b></StyledTD>
                     <StyledTD>{request_information.requestedDaysTotal}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Time-off category</b></StyledTD>
+                    <StyledTD><b>Категория отгула</b></StyledTD>
                     <StyledTD>{request_information.timeOffCategory}</StyledTD>
                 </tr>
             </table>

@@ -82,7 +82,7 @@ export default function ListTable({ openDialog, columns, contentList, style }) {
               </TableHeaderCell>
             ))}
             <TableHeaderCell>
-              <TextHeader>Actions</TextHeader>
+              <TextHeader>Действия</TextHeader>
             </TableHeaderCell>
           </TableRow>
         </TableHead>
@@ -151,7 +151,7 @@ export default function ListTable({ openDialog, columns, contentList, style }) {
                 handleCloseMenu();
               }}
             >
-              Delete
+              Удалить
             </MenuItem>
           </Menu>
         </TableBody>

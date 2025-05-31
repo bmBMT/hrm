@@ -57,10 +57,10 @@ export default function ToDoTable({tasks, setTasks, style}) {
                 <TableHead>
                     <TableRow sx={{backgroundColor: "#F9FAFB"}}>
                         <TableHeaderCell>
-                            <b style={{color: colors.grey}}>To-Do</b>
+                            <b style={{color: colors.grey}}>Задача</b>
                         </TableHeaderCell>
                         <TableHeaderCell align="right">
-                            <b style={{color: colors.grey}}>Done</b>
+                            <b style={{color: colors.grey}}>Завершена</b>
                         </TableHeaderCell>
                     </TableRow>
                 </TableHead>

@@ -223,7 +223,7 @@ export default function HeadcountChanges() {
 								transform: 'translateY(-50%) rotate(-90deg)',
 							}}
 						>
-							Number of employees
+							Кол-во сотрудников
 						</Typography>
 
 						<Typography
@@ -235,7 +235,7 @@ export default function HeadcountChanges() {
 								transform: 'translateY(-70%)',
 							}}
 						>
-							Months
+							Месяцы
 						</Typography>
 					</Box>
 				</ThemeProvider>

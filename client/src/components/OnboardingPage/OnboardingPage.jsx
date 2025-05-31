@@ -78,12 +78,12 @@ export default function OnboardingPage({style}) {
 
     //Labels for each onboarding step
     const steps = [
-        {label: "Start"},
-        {label: "Videos"},
-        {label: "Readings"},
-        {label: "To-dos"},
-        {label: "Survey"},
-        {label: "Finish"}
+        {label: "Начало"},
+        {label: "Видео"},
+        {label: "Учебные материалы"},
+        {label: "Задачи"},
+        {label: "Опросник"},
+        {label: "Конец"}
     ];
 
     return (

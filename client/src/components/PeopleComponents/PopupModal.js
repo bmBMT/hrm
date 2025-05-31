@@ -68,9 +68,9 @@ export default function PopupModal(props) {
         <Box sx={style}>
           <div className="PopupModals">
             <div className="unsavedPopupBody">
-              <label className="modal-header-h2"> Unsaved Changes</label>
+              <label className="modal-header-h2">Не сохраненные изменения</label>
               <p className="modal-header-p">
-                Do you want to save or discard changes?
+                Вы хотите сбросить изменения?
               </p>
               <div className="btngroup1">
                 <Button
@@ -78,21 +78,21 @@ export default function PopupModal(props) {
                   onClick={handleAccept}
                   disableRipple
                 >
-                  Save changes
+                  Сохранить изменения
                 </Button>
                 <Button
                   sx={otherButtonStyle}
                   onClick={handleDiscard}
                   disableRipple
                 >
-                  Discard
+                  Сбросить
                 </Button>
                 <Button
                   sx={otherButtonStyle}
                   onClick={handleClose}
                   disableRipple
                 >
-                  Cancel
+                  Отмена
                 </Button>
               </div>
             </div>

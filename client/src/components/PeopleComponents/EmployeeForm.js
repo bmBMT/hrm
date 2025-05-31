@@ -192,7 +192,7 @@ function createHeader(employee, handleDiscard) {
           },
         }}
       >
-        Discard and go back
+        Отменить и вернуться назад
       </Button>
     </Box>
   );
@@ -273,7 +273,7 @@ function CustomisedDatePicker(props) {
   const { label, name, value, handleChange, validator } = props;
   return (
     <Stack sx={rootStyle} spacing={1}>
-   <Typography>{label}</Typography>
+      <Typography>{label}</Typography>
       <Typography>
         <HRMDatePicker
           name={name}
@@ -322,7 +322,7 @@ function GenderSelectTag(props) {
     props;
   return (
     <Stack sx={rootStyle} spacing={1}>
-    <Typography>{label}</Typography>
+      <Typography>{label}</Typography>
       <Typography>
         <select
           className={
@@ -404,7 +404,7 @@ function CustomisedSocialMediaInput(props) {
 function SocialMediaContainer({ children }) {
   return (
     <Stack spacing={1}>
-      <Typography>Social profiles</Typography>
+      <Typography>Социальные сети</Typography>
       <Stack spacing={1} direction={"row"}>
         {children}
       </Stack>
@@ -452,9 +452,9 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
           employee
             ? employee
             : {
-                hireDate: dayjs().format("MMM D, YYYY"),
-                effectiveDate: dayjs().format("MMM D, YYYY"),
-              }
+              hireDate: dayjs().format("MMM D, YYYY"),
+              effectiveDate: dayjs().format("MMM D, YYYY"),
+            }
         );
         if (employee && employee.photo) {
           setInputs((values) => ({
@@ -604,9 +604,8 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
     setValidator(result);
     if (!result.valid) {
       const count = Object.keys(result).length - 1;
-      const msg = `Form validation failed. ${count} ${
-        count === 1 ? "error" : "errors"
-      } found.`;
+      const msg = `Form validation failed. ${count} ${count === 1 ? "error" : "errors"
+        } found.`;
       console.log(msg);
       return;
     }
@@ -668,7 +667,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
       //direction="column"
       //alignItems="center"
       //justifyContent="center"
-      sx={{ minHeight: "100vh" ,border: "0px solid red"}}
+      sx={{ minHeight: "100vh", border: "0px solid red" }}
     >
       {change && prompt && (
         <PopupModal
@@ -775,14 +774,14 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             {createSubHead("Job")}
             <RowStack>
               <CustomisedInput
-                label={"Mobile"}
+                label={"Номер телефона"}
                 name={"phoneNumber"}
                 value={inputs.phoneNumber || ""}
                 handleChange={handleChange}
                 validator={validator}
               />
               <CustomisedInput
-                label={"Work email"}
+                label={"Рабочая эл. почта"}
                 name={"email"}
                 value={inputs.email || ""}
                 handleChange={handleChange}
@@ -792,14 +791,14 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedInput
-                label={"Address line 1"}
+                label={"Адрес 1"}
                 name={"streetAddress"}
                 value={inputs.streetAddress || ""}
                 handleChange={handleChange}
                 validator={validator}
               />
               <CustomisedInput
-                label={"Address line 2"}
+                label={"Адрес 2"}
                 name={"unitSuite"}
                 value={inputs.unitSuite || ""}
                 handleChange={handleChange}
@@ -808,7 +807,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedSelectTag
-                label={"Country"}
+                label={"Страна"}
                 name={"country"}
                 value={inputs.country || ""}
                 options={getCountryName()}
@@ -816,7 +815,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 validator={validator}
               />
               <CustomisedSelectTag
-                label={"State (if applicable)"}
+                label={"Регион"}
                 name={"stateProvince"}
                 value={inputs.stateProvince || ""}
                 options={getStates(inputs.country)}
@@ -827,7 +826,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             <RowStack>
               <Stack spacing={1} width={"100%"}>
                 <CustomisedSelectTag
-                  label={"City"}
+                  label={"Город"}
                   name={"city"}
                   value={inputs.city || ""}
                   options={getCities(inputs.country, inputs.stateProvince)}
@@ -847,7 +846,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
               </Stack>
 
               <CustomisedInput
-                label={"Postal/zip code"}
+                label={"Почтовый индекс"}
                 name={"postalZipCode"}
                 value={inputs.postalZipCode || ""}
                 handleChange={handleChange}
@@ -856,14 +855,14 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedInput
-                label={"Emergency contact name"}
+                label={"Имя контактного лица для экстренных случаев"}
                 name={"emergencyContactName"}
                 value={inputs.emergencyContactName || ""}
                 handleChange={handleChange}
                 validator={validator}
               />
               <CustomisedInput
-                label={"Emergency contact relationship"}
+                label={"Кем вам приходится контактное лицо"}
                 name={"emergencyContactRelationship"}
                 value={inputs.emergencyContactRelationship || ""}
                 handleChange={handleChange}
@@ -872,7 +871,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedInput
-                label={"Emergency contact phone"}
+                label={"Номер телефона контактного лица"}
                 name={"emergencyContactPhoneNumber"}
                 value={inputs.emergencyContactPhoneNumber || ""}
                 handleChange={handleChange}
@@ -888,7 +887,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             {createSubHead("Job")}
             <RowStack>
               <CustomisedDatePicker
-                label={"Hire date"}
+                label={"Дата приема на работу"}
                 name={"hireDate"}
                 value={inputs.hireDate || dayjs().format("MMM D, YYYY")}
                 handleChange={handleChange}
@@ -896,7 +895,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 restricted={restricted}
               />
               <CustomisedSelectTag
-                label={"Reporting to"}
+                label={"Непосредственный руководитель"}
                 name={"reportTo"}
                 value={inputs.reportTo || ""}
                 options={getManagerNames(managers)}
@@ -907,7 +906,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedSelectTag
-                label={"Department"}
+                label={"Отдел"}
                 name={"_department"}
                 value={inputs._department || ""}
                 options={getValues(departments, "departmentName")}
@@ -916,7 +915,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 restricted={restricted}
               />
               <CustomisedSelectTag
-                label={"Position"}
+                label={"Должность"}
                 name={"_role"}
                 value={inputs._role || ""}
                 options={getValues(positions, "roleTitle")}
@@ -927,7 +926,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedInput
-                label={"Office"}
+                label={"Офис"}
                 name={"officeLocation"}
                 value={inputs.officeLocation || ""}
                 handleChange={handleChange}
@@ -935,7 +934,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 restricted={restricted}
               />
               <CustomisedSelectTag
-                label={"Employment type"}
+                label={"Тип занятости"}
                 name={"employmentType"}
                 value={inputs.employmentType || ""}
                 options={selectOptions.employmentType}
@@ -946,7 +945,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedSelectTag
-                label={"Compensation type"}
+                label={"Тип вознаграждения"}
                 name={"compensationType"}
                 value={inputs.compensationType || ""}
                 options={selectOptions.compensationType}
@@ -955,7 +954,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 restricted={restricted}
               />
               <CustomisedInput
-                label={"Salary"}
+                label={"Зарплата"}
                 name={"salary"}
                 value={inputs.salary || ""}
                 handleChange={handleChange}
@@ -965,7 +964,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedDatePicker
-                label={"Effective date"}
+                label={"Дата вступления в силу"}
                 name={"effectiveDate"}
                 value={inputs.effectiveDate || dayjs().format("MMM D, YYYY")}
                 handleChange={handleChange}
@@ -973,7 +972,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 restricted={restricted}
               />
               <CustomisedInput
-                label={"Hours per week"}
+                label={"Часов в неделю"}
                 name={"weeklyHours"}
                 value={inputs.weeklyHours || ""}
                 handleChange={handleChange}
@@ -1008,7 +1007,7 @@ const validateName = (fieldName, name) => {
   if (!regex.test(name)) {
     return {
       valid: false,
-      message: `Invalid character. Only alphabets, approstrophe and hyphen are allowed.`,
+      message: `Недопустимый символ. Разрешены только буквы, апостроф и дефис.`,
     };
   }
   let hyphenCount = 0;
@@ -1019,7 +1018,7 @@ const validateName = (fieldName, name) => {
       if (hyphenCount > 1) {
         return {
           valid: false,
-          message: "Multiple hypens are not allowed.",
+          message: "Использование нескольких дефисов подряд не допускается.",
         };
       }
     }
@@ -1028,7 +1027,7 @@ const validateName = (fieldName, name) => {
       if (approstropheCount > 1) {
         return {
           valid: false,
-          message: "Multiple approstrophes are not allowed.",
+          message: "Не допускается использование нескольких апострофов подряд.",
         };
       }
     }
@@ -1037,27 +1036,27 @@ const validateName = (fieldName, name) => {
   if (name.charAt(0) === "-" || name.charAt(name.length - 1) === "-") {
     return {
       valid: false,
-      message: `${fieldName} cannot begin or end with -`,
+      message: `${fieldName} не может заканчиваться на -`,
     };
   }
 
   if (name.length === 1) {
     return {
       valid: false,
-      message: `${fieldName} must contain more than one character.`,
+      message: `${fieldName} должен содержать более 1 символа.`,
     };
   }
 
   if (name.charCodeAt(0) < 65 || name.charCodeAt(0) > 90) {
     return {
       valid: false,
-      message: `${fieldName} must begin with an uppercase.`,
+      message: `${fieldName} должен начинатся с большой буквы.`,
     };
   }
 
   return {
     valid: true,
-    message: "Valid input",
+    message: "Допустимое значение",
   };
 };
 
@@ -1065,7 +1064,7 @@ const validatePhoneNumber = (num) => {
   if (isEmpty(num)) {
     return {
       valid: false,
-      message: "Please enter a phone number",
+      message: "Пожалуйста введите номер телефона",
     };
   }
   num = num.trim();
@@ -1074,19 +1073,19 @@ const validatePhoneNumber = (num) => {
     if (num.charCodeAt(i) < 48 || num.charCodeAt(i) > 57) {
       return {
         valid: false,
-        message: "Invalid phone number. Please enter a valid phone number",
+        message: "Некорректный номер телефона. Укажите действительный номер.",
       };
     }
   }
-  if (num.substring(startIndex).length < 10) {
+  if (num.substring(startIndex).length < 11) {
     return {
       valid: false,
-      message: "Phone number must have at least 10 digits",
-    };
+      message: "Номер телефона должен содержать 11 символов",
+    }
   }
   return {
     valid: true,
-    message: "valid",
+    message: "Допустимое значение",
   };
 };
 
@@ -1094,20 +1093,20 @@ const validateNumberInput = (fieldName, value) => {
   if (isEmpty(value)) {
     return {
       valid: false,
-      message: `${fieldName} can not be empty`,
+      message: `${fieldName} не должен быть пустым`,
     };
   }
 
   if (isNaN(value)) {
     return {
       valid: false,
-      message: `Invalid input. Please enter a valid number`,
+      message: `Не корректное число.`,
     };
   }
   if (Number(value) < 0) {
     return {
       valid: false,
-      message: `${fieldName} cannot be less than 0`,
+      message: `${fieldName} не должно быть меньше нуля`,
     };
   }
   return {
@@ -1120,17 +1119,17 @@ const validatePostalCode = (postalCode) => {
   if (isEmpty(postalCode)) {
     return {
       valid: false,
-      message: "Please enter postal code",
+      message: "Пожалуйста введите почтовый индекс",
     };
   }
   //The regex matches postal code of the format A1A 2B2 and A1A2B2 (case insensitive)
-  const regex = /^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d/g;
-  if (!regex.test(postalCode.trim())) {
-    return {
-      valid: false,
-      message: "In valid postal code. Please enter a valid postal code",
-    };
-  }
+  // const regex = /^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d/g;
+  // if (!regex.test(postalCode.trim())) {
+  //   return {
+  //     valid: false,
+  //     message: "In valid postal code. Please enter a valid postal code",
+  //   };
+  // }
   return {
     valid: true,
     message: "valid",
@@ -1157,36 +1156,36 @@ const validateSocialProfile = async (empId, mediumName, profileUrl) => {
   const res = api.socialProfile.fetchOneByUrl(data);
 
   if (res.exists) {
-    return { valid: false, message: "Profile already exists" };
+    return { valid: false, message: "Профиль уже существует" };
   }
   return { valid: true, message: "valid" };
 };
 
 const validateForm = async (employee) => {
   const results = { valid: true };
-  let check = validateName("First name", employee.firstName);
+  let check = validateName("Имя", employee.firstName);
   let valid = true;
   if (!check.valid) {
     valid = check.valid;
     results.firstName = check.message;
   }
-  check = validateName("Last name", employee.lastName);
+  check = validateName("Фамилия", employee.lastName);
   if (!check.valid) {
     valid = check.valid;
     results.lastName = check.message;
   }
   if (isEmpty(employee.gender)) {
     valid = false;
-    results.gender = "Please, select gender";
+    results.gender = "Пожалуйста выберите пол";
   }
 
   if (isEmpty(employee.nationality)) {
     valid = false;
-    results.nationality = "Please, select nationality";
+    results.nationality = "Выберите национальность";
   }
   if (isEmpty(employee.dateOfBirth)) {
     valid = false;
-    results.dateOfBirth = "Please, select birth day";
+    results.dateOfBirth = "Укажите дату рождения";
   } else {
     const dateOfBirth = employee.dateOfBirth;
     const currentDate = dayjs();
@@ -1196,25 +1195,25 @@ const validateForm = async (employee) => {
       results.dateOfBirth = "Birth date must be in the past";
     } else if (diff < 15) {
       valid = false;
-      results.dateOfBirth = "Employee must be 15 years old or older.";
+      results.dateOfBirth = "Сотрудник должен быть старше 15 лет.";
     }
   }
   if (isEmpty(employee.maritalStatus)) {
     valid = false;
-    results.maritalStatus = "Please, select marital status";
+    results.maritalStatus = "Укажите семейное положение";
   }
   if (isEmpty(employee.email)) {
     valid = false;
-    results.email = "Please, enter an email";
+    results.email = "Введите эл. почту";
   } else if (!validator.isEmail(employee.email)) {
     valid = false;
-    results.email = "Invalid email. Please, enter a valid email";
+    results.email = "Недопустимая эл. почта";
   } else {
     const res = await api.employee.fetchOneByEmail(employee.email);
 
     if (res && res.empId !== employee.empId) {
       valid = false;
-      results.email = "Email already exists";
+      results.email = "Эл. почта уже используется";
     }
   }
   check = validatePhoneNumber(employee.phoneNumber);
@@ -1224,11 +1223,11 @@ const validateForm = async (employee) => {
   }
   if (isEmpty(employee.hireDate)) {
     valid = false;
-    results.hireDate = "Please select hire date";
+    results.hireDate = "Укажите дату начала работы";
   }
   if (isEmpty(employee._role)) {
     valid = false;
-    results._role = "Please, select a position";
+    results._role = "Укажите должность";
   }
   check = validateNumberInput("Salary", employee.salary);
   if (!check.valid) {
@@ -1238,28 +1237,28 @@ const validateForm = async (employee) => {
 
   if (isEmpty(employee._department)) {
     valid = false;
-    results._department = "Please, select a department";
+    results._department = "Укажите отдел";
   }
   if (isEmpty(employee.employmentType)) {
     valid = false;
-    results.employmentType = "Please, select a employment type";
+    results.employmentType = "Укажите тип занятости";
   }
   if (isEmpty(employee.compensationType)) {
     valid = false;
-    results.compensationType = "Please, select a compensation type";
+    results.compensationType = "Укажите тип выплат";
   }
   if (isEmpty(employee.officeLocation)) {
     valid = false;
-    results.officeLocation = "Please, enter office location";
+    results.officeLocation = "Укажите офис";
   }
   if (isEmpty(employee.emergencyContactName)) {
     valid = false;
-    results.emergencyContactName = "Please, enter emergency contact's name";
+    results.emergencyContactName = "Укажите контактное имя";
   }
   if (isEmpty(employee.emergencyContactRelationship)) {
     valid = false;
     results.emergencyContactRelationship =
-      "Please, enter emergency contact's relationship";
+      "Укажите кем приходится контактное лицо сотруднику";
   }
   check = validatePhoneNumber(employee.emergencyContactPhoneNumber);
   if (!check.valid) {
@@ -1268,19 +1267,19 @@ const validateForm = async (employee) => {
   }
   if (isEmpty(employee.streetAddress)) {
     valid = false;
-    results.streetAddress = "Please, enter street address";
+    results.streetAddress = "Укажите улицу";
   }
   if (isEmpty(employee.country)) {
     valid = false;
-    results.country = "Please select country";
+    results.country = "Укажите страну";
   }
   if (isEmpty(employee.city)) {
     valid = false;
-    results.city = "Please select city";
+    results.city = "Выберите город";
   }
   if (employee.city === "Others" && isEmpty(employee._city)) {
     valid = false;
-    results._city = "Please enter city";
+    results._city = "Выберите город";
   }
   //postal code validation is done if the select country is Canada
   if (employee.country === "Canada") {

@@ -96,7 +96,7 @@ export default function TimeOffConfirmDelete({request_information, close, refres
         >
             {/*Title*/}
             <Stack direction="row" justifyContent="space-between" alignItems="center">
-                <h3>Confirm delete time off request</h3>
+                <h3>Одобрить отмену отгула</h3>
                 <CloseIcon onclick={close} sx={{
                     backgroundColor: "#FFFFFF",
                     "&:hover": {
@@ -108,7 +108,7 @@ export default function TimeOffConfirmDelete({request_information, close, refres
             {/*Request Information*/}
             <table style={{width: "100%", marginBottom: "40px"}}>
                 <tr>
-                    <StyledTD><b>Photo</b></StyledTD>
+                    <StyledTD><b>Фото</b></StyledTD>
                     <StyledTD>
                         <Avatar
                             alt={request_information.name}
@@ -118,49 +118,49 @@ export default function TimeOffConfirmDelete({request_information, close, refres
                     </StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Name</b></StyledTD>
+                    <StyledTD><b>Имя</b></StyledTD>
                     <StyledTD>{request_information.name}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Role</b></StyledTD>
+                    <StyledTD><b>Роль</b></StyledTD>
                     <StyledTD>{request_information.role}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Email</b></StyledTD>
+                    <StyledTD><b>Эл. почта</b></StyledTD>
                     <StyledTD>{request_information.email}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Office</b></StyledTD>
+                    <StyledTD><b>Офис</b></StyledTD>
                     <StyledTD>{request_information.office}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Effective date</b></StyledTD>
+                    <StyledTD><b>Дата начала работы</b></StyledTD>
                     <StyledTD>{request_information.effectiveDate}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Time off balance</b></StyledTD>
+                    <StyledTD><b>Время работы</b></StyledTD>
                     <StyledTD>{request_information.timeOffBalance}</StyledTD>
                 </tr>
             </table>
-            <table styled={{width: "100%"}}>
+            <table style={{width: "100%"}}>
                 <tr>
-                    <StyledTD><b>Time off requested</b></StyledTD>
-                    <StyledTD>{request_information.timeOFfRequested}</StyledTD>
+                    <StyledTD><b>Запрошен отгул</b></StyledTD>
+                    <StyledTD>{request_information.timeOffRequested}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Requested days total</b></StyledTD>
+                    <StyledTD><b>Кол-во запрошенных отгулов</b></StyledTD>
                     <StyledTD>{request_information.requestedDaysTotal}</StyledTD>
                 </tr>
                 <tr>
-                    <StyledTD><b>Time-off category</b></StyledTD>
+                    <StyledTD><b>Категория отгула</b></StyledTD>
                     <StyledTD>{request_information.timeOffCategory}</StyledTD>
                 </tr>
             </table>
             {/*Options*/}
             {request_information.status === "Cancelled" && 
-                <b style={{color: "#5D6B98", marginBottom: "30px"}}>Time off request has been deleted</b>}
+                <b style={{color: "#5D6B98", marginBottom: "30px"}}>Запрос на отгул был отменен</b>}
             {(request_information.status !== "Deleting" && request_information.status !== "Cancelled") &&
-                <b style={{color: "#5D6B98", marginBottom: "30px"}}>Time off request is not being deleted</b>}
+                <b style={{color: "#5D6B98", marginBottom: "30px"}}>Запрос на отгул не удаляется</b>}
             <Stack
                 direction="row"
                 alignItems="center"
@@ -170,8 +170,8 @@ export default function TimeOffConfirmDelete({request_information, close, refres
                 {(request_information.status === "Deleting") ?
                     <>
                         <HRMButton mode="tertiary" onClick={close}>Cancel</HRMButton>
-                        <HRMButton mode="secondaryA" onClick={() => resolveRequest("Pending")}>Reject</HRMButton>
-                        <HRMButton mode="error" onClick={() => resolveRequest("Cancelled")}>Delete</HRMButton>
+                        <HRMButton mode="secondaryA" onClick={() => resolveRequest("Pending")}>Отклонить</HRMButton>
+                        <HRMButton mode="error" onClick={() => resolveRequest("Cancelled")}>Отменить</HRMButton>
                     </> :
                     <HRMButton mode="tertiary" onClick={close}>Close</HRMButton>}
             </Stack>

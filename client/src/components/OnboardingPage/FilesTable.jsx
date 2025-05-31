@@ -40,7 +40,7 @@ export default function FilesTable({files, style}) {
                 <TableHead>
                     <TableRow sx={{backgroundColor: "#F9FAFB"}}>
                         <TableHeaderCell>
-                            <b style={{color: colors.grey}}>File name</b>
+                            <b style={{color: colors.grey}}>Имя файла</b>
                         </TableHeaderCell>
                     </TableRow>
                 </TableHead>
@@ -60,7 +60,7 @@ export default function FilesTable({files, style}) {
                                                 color: "#7F56D9"
                                             }}
                                         >
-                                            Download
+                                            Скачать
                                         </a>
                                     </HRMButton>
                                 </Stack>

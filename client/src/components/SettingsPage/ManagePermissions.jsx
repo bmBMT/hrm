@@ -13,7 +13,6 @@ import PermissionsTable from "./PermissionsTable";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import Toast from "./Toast";
 import PermissionsDialog from "./PermissionsDialog";
-import { useSettingsContext } from "./context";
 
 const HeadText = styled(Typography)({
   fontSize: "18px",
@@ -101,7 +100,7 @@ export default function ManagePermissions({
             >
               <HeadText component="h3">{titleTabPage}</HeadText>
               <Tooltip
-                title="Assign roles such as Admin, Manager, or Employee to define the level of access and control each user has. Admins have full access to all settings and can add or remove employees. Managers can approve time-off requests for their teams and view full information about their team members, while Employees can request time off and view only their own information."
+                title="Назначьте роли, такие как Администратор, Менеджер или Сотрудник, чтобы определить уровень доступа и контроля для каждого пользователя. Администраторы имеют полный доступ ко всем настройкам и могут добавлять или удалять сотрудников. Менеджеры могут согласовывать запросы на отпуск для своих команд и просматривать полную информацию о членах своей команды. Сотрудники могут подавать запросы на отпуск и просматривать только свою собственную информацию."
                 placement="right"
               >
                 <IconButton

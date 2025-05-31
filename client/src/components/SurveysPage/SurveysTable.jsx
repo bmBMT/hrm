@@ -75,10 +75,10 @@ export default function SurveysTable({surveyList, setSurvey, refresh, style}) {
                 {/*Table header*/}
                 <TableHead>
                     <TableRow sx={{ backgroundColor: "#F9FAFB" }}>
-                        <TableHeaderCell><b>Name</b></TableHeaderCell>
-                        <TableHeaderCell><b>Start date</b></TableHeaderCell>
-                        <TableHeaderCell><b>Finish date</b></TableHeaderCell>
-                        <TableHeaderCell colSpan={2}><b>Answered</b></TableHeaderCell>
+                        <TableHeaderCell><b>Название</b></TableHeaderCell>
+                        <TableHeaderCell><b>Дата начала</b></TableHeaderCell>
+                        <TableHeaderCell><b>Дата окончания</b></TableHeaderCell>
+                        <TableHeaderCell colSpan={2}><b>Отвечено</b></TableHeaderCell>
                     </TableRow>
                 </TableHead>
                 {/*Surveys*/}
@@ -88,7 +88,7 @@ export default function SurveysTable({surveyList, setSurvey, refresh, style}) {
                             <TableBodyCell><b>{survey.name}</b></TableBodyCell>
                             <TableBodyCell>{formatDate(dayjs(survey.startedAt).toDate())}</TableBodyCell>
                             <TableBodyCell>{formatDate(dayjs(survey.completedAt).toDate())}</TableBodyCell>
-                            <TableBodyCell>{survey.respondentCount} times</TableBodyCell>
+                            <TableBodyCell>{survey.respondentCount} раз</TableBodyCell>
                             <TableBodyCell>
                                 <Stack 
                                     direction="row" 
@@ -97,10 +97,10 @@ export default function SurveysTable({surveyList, setSurvey, refresh, style}) {
                                     spacing={1}
                                 >
                                     <HRMButton mode="tertiary" onClick={() => handleDelete(survey.id)}>
-                                        <b>Delete</b>
+                                        <b>Удалить</b>
                                     </HRMButton>
                                     <HRMButton mode="tertiary" onClick={() => setSurvey(survey)}>
-                                        <b style={{ color: colors.purple }}>View</b>
+                                        <b style={{ color: colors.purple }}>Просмотреть</b>
                                     </HRMButton>
                                 </Stack>
                             </TableBodyCell>

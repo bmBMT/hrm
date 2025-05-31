@@ -79,10 +79,10 @@ export default function SetupDepartmentsMenu({advancePage, style}) {
         }, ...style}}>
             {/*Text*/}
             <h3 style={{margin: "1em auto", textAlign: "center"}}>
-                Select the departments to add
+                Выберите отделы для добавления
             </h3>
             <p style={{margin: "1em auto 80px", textAlign: "center"}}>
-                You can modify the name or add more departments later
+                Вы можете изменить название или добавить отделы позже
             </p>
             {/*Buttons*/}
             {formattedDepartments.map((list) => (
@@ -114,7 +114,7 @@ export default function SetupDepartmentsMenu({advancePage, style}) {
                     marginTop: "80px"
                 }}
             >
-                Add Departments
+                Добавить отделы
             </HRMButton>
         </Box>
     );

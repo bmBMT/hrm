@@ -70,10 +70,10 @@ export default function OnboardingTasks({prev, next, save, onboardingId, style})
         }, ...style}}>
             {/*Title*/}
             <h4 style={{textAlign: "center", marginTop: 0, marginBottom: "10px"}}>
-                Complete your to-do items
+                Завершите ваши задачи
             </h4>
             <p style={{textAlign: "center", marginBottom: "50px"}}>
-                You may discuss your to-dos with your manager
+                Вы можете поговорить о задачах с вашим менеджером
             </p>
             {/*Content*/}
             <ToDoTable
@@ -89,9 +89,9 @@ export default function OnboardingTasks({prev, next, save, onboardingId, style})
                         mode="secondaryB" 
                         onClick={saveTasks}
                     >
-                        Save and complete later
+                        Сохранить и завершить позже
                     </HRMButton>
-                    <HRMButton mode="primary" enabled={allTasksComplete} onClick={next}>Save and next</HRMButton>
+                    <HRMButton mode="primary" enabled={allTasksComplete} onClick={next}>Сохранить</HRMButton>
                 </Stack>
             </Stack>
         </Box>

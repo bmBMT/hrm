@@ -78,7 +78,7 @@ export default function PermissionsDialog({ open, onClose, setToast }) {
       setToast({
         open: true,
         severity: "success",
-        message: "Permission updated successfully",
+        message: "Успешное обновление прав доступа",
       });
       onClose();
     } catch (error) {
@@ -86,7 +86,7 @@ export default function PermissionsDialog({ open, onClose, setToast }) {
       setToast({
         open: true,
         severity: "error",
-        message: "Failed to update permission",
+        message: "Ошибка при обновлении прав доступа",
       });
     }
   };
@@ -95,7 +95,7 @@ export default function PermissionsDialog({ open, onClose, setToast }) {
     <Dialog open={open} onClose={onClose}>
       <Stack direction="row" justifyContent="space-between">
         <DialogTitle>
-          {`Do you approve the change: ${employee?.permission?.type} → ${updatedPermissions?.[0]?.newPermission}?`}
+          {`Вы одобряете изменения: ${employee?.permission?.type} → ${updatedPermissions?.[0]?.newPermission}?`}
         </DialogTitle>
         <CloseIcon
           onClick={onClose}
@@ -127,10 +127,10 @@ export default function PermissionsDialog({ open, onClose, setToast }) {
           sx={{ marginTop: "50px" }}
         >
           <HRMButton mode="secondaryB" onClick={onClose} color="primary">
-            Cancel
+            Отмена
           </HRMButton>
           <HRMButton mode="primary" onClick={onSubmit}>
-            Confirm
+            Применить
           </HRMButton>
         </Stack>
       </DialogContent>

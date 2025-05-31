@@ -68,7 +68,7 @@ export default function NewTeamMember({employee_details, close, style}) {
                 <>
                     <table style={{width: "100%", marginBottom: "40px"}}>
                         <tr>
-                            <StyledTD><b>Photo</b></StyledTD>
+                            <StyledTD><b>Фото</b></StyledTD>
                             <StyledTD>
                                 <Avatar 
                                     alt={employee_details.name} 
@@ -78,30 +78,30 @@ export default function NewTeamMember({employee_details, close, style}) {
                             </StyledTD>
                         </tr>
                         <tr>
-                            <StyledTD><b>Name</b></StyledTD>
+                            <StyledTD><b>Имя</b></StyledTD>
                             <StyledTD>{employee_details.name}</StyledTD>
                         </tr>
                         <tr>
-                            <StyledTD><b>Role</b></StyledTD>
+                            <StyledTD><b>Роль</b></StyledTD>
                             <StyledTD>{employee_details.role}</StyledTD>
                         </tr>
                         <tr>
-                            <StyledTD><b>Email</b></StyledTD>
+                            <StyledTD><b>Эл. почта</b></StyledTD>
                             <StyledTD>{employee_details.email}</StyledTD>
                         </tr>
                         <tr>
-                            <StyledTD><b>Office</b></StyledTD>
+                            <StyledTD><b>Офис</b></StyledTD>
                             <StyledTD>{employee_details.office}</StyledTD>
                         </tr>
                         <tr>
-                            <StyledTD><b>Effective date</b></StyledTD>
+                            <StyledTD><b>Дата начала работы</b></StyledTD>
                             <StyledTD>{employee_details.effectiveDate}</StyledTD>
                         </tr>
                     </table>
                     {/*Buttons*/}
                     <Stack direction="row" alignItems="center" justifyContent="flex-end" spacing={2}>
-                        <HRMButton mode="tertiary" onClick={close}>Dismiss</HRMButton>
-                        <HRMButton mode="primary">See employee details</HRMButton>
+                        <HRMButton mode="tertiary" onClick={close}>Закрыть</HRMButton>
+                        <HRMButton mode="primary">Просмотреть подробную информацию</HRMButton>
                     </Stack>
                 </> :
                 <CircularProgress color="inherit" sx={{marginX: "47%", marginTop: "20%"}} />

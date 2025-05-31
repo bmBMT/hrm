@@ -75,7 +75,7 @@ export default function DepartmentsTabContent({ style }) {
             justifyContent="space-between"
             style={{ marginBottom: "20px" }}
           >
-            <HeadText component="h3">Departments</HeadText>
+            <HeadText component="h3">Отделы</HeadText>
             <HRMButton
               mode="primary"
               onClick={() => openDialog(undefined, "add")}
@@ -108,7 +108,7 @@ export default function DepartmentsTabContent({ style }) {
             )}
           </>
         ) : (
-          <p>There is no departments right now.</p>
+          <p>Список депортаментов пуст</p>
         )}
         <Toast
           open={toast.open}

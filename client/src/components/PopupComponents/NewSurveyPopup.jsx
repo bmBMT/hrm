@@ -384,8 +384,8 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                 sx={{marginBottom: "40px"}}
             >
                 {pageNumber <= 4 ? 
-                    <h3>Create new survey ({pageNumber}/4)</h3> : 
-                    <h3>Review survey</h3>
+                    <h3>Создать новый опрос ({pageNumber}/4)</h3> : 
+                    <h3>Просмотреть опрос</h3>
                 }
                 <CloseIcon onClick={close} sx={{
                     backgroundColor: "#FFFFFF",
@@ -399,7 +399,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
             {/*Page 1: Choosing survey name*/}
             {pageNumber === 1 &&
                 <>
-                    <Header4>Internal survey name<span style={{color: "red"}}>*</span></Header4>
+                    <Header4>Название опроса<span style={{color: "red"}}>*</span></Header4>
                     <TextField 
                         value={newSurvey.name}
                         error={validation[1]}
@@ -445,7 +445,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
             {pageNumber === 2 &&
                 <>
                     {/*Textfields for welcome screen title and message*/}
-                    <Header4>Welcome screen title<span style={{color: "red"}}>*</span></Header4>
+                    <Header4>Заголовок начала опроса<span style={{color: "red"}}>*</span></Header4>
                     <TextField 
                         value={newSurvey.welcomeTitle}
                         error={validation[2] && !newSurvey.welcomeTitle}
@@ -457,7 +457,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                             marginBottom: "20px" 
                         }}
                     />
-                    <Header4>Welcome screen message</Header4>
+                    <Header4>Текст начала опроса</Header4>
                     <TextField 
                         value={newSurvey.welcomeMessage}
                         placeholder="Enter welcome screen message..."
@@ -470,7 +470,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                         }}
                     />
                     {/*Textfields for end screen title and message*/}
-                    <Header4>End screen title<span style={{color: "red"}}>*</span></Header4>
+                    <Header4>Заголовок конца опроса<span style={{color: "red"}}>*</span></Header4>
                     <TextField 
                         value={newSurvey.endTitle}
                         error={validation[2] && !newSurvey.endTitle}
@@ -482,7 +482,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                             marginBottom: "20px"
                         }}
                     />
-                    <Header4>End screen message</Header4>
+                    <Header4>Текст конца опроса</Header4>
                     <TextField 
                         value={newSurvey.endMessage}
                         placeholder="Enter end screen message..."
@@ -502,7 +502,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                         sx={{ marginBottom: "40px" }}
                     >
                         <Box>
-                            <Header4>Start date</Header4>
+                            <Header4>Дата начала</Header4>
                             <Chip 
                                 icon={<CalendarMonthIcon />}
                                 label={formatDate(dayjs(newSurvey.startedAt).toDate())}
@@ -513,7 +513,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                             />
                         </Box>
                         <Box>
-                            <Header4>End date</Header4>
+                            <Header4>Дата окончания</Header4>
                             <Chip 
                                 icon={<CalendarMonthIcon />}
                                 label={formatDate(dayjs(newSurvey.completedAt).toDate())}
@@ -563,14 +563,14 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                             setQuestions={(questions) => setNewSurvey({...newSurvey, questions})}
                             style={{ marginBottom: "20px" }} 
                         /> :
-                        <Header4>No questions have been added</Header4>
+                        <Header4>Вопросы не были добавлены</Header4>
                     }
                 </>
             }
             {/*Page 4: Adding survey recipients*/}
             {pageNumber === 4 && 
                 <>
-                    <Header5>Survey recipients</Header5>
+                    <Header5>Получатели опроса</Header5>
                     <Stack
                         direction="row"
                         alignItems="center"
@@ -606,7 +606,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                             canEdit={!initialSurvey}
                             style={{ marginBottom: "20px" }}
                         /> :
-                        <Header4>No recipients have been added</Header4>
+                        <Header4>Получатели не были добвлены</Header4>
                     }
                 </>
             }
@@ -614,7 +614,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
             {pageNumber === 5 && 
                 <>
                     {/*Welcome screen title and message*/}
-                    <Header5>Welcome screen title</Header5>
+                    <Header5>Заголовок экрана приветствия</Header5>
                     <p style={{ marginBottom: "40px" }}>{newSurvey.welcomeTitle}</p>
                     <Header5>Welcome screen message</Header5>
                     <p style={{ marginBottom: "40px" }}>
@@ -624,7 +624,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                         }
                     </p>
                     {/*End screen title and message*/}
-                    <Header5>End screen title</Header5>
+                    <Header5>Заголовок финального экрана</Header5>
                     <p style={{ marginBottom: "40px" }}>{newSurvey.endTitle}</p>
                     <Header5>End screen message</Header5>
                     <p style={{ marginBottom: "40px" }}>
@@ -634,16 +634,16 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                         }
                     </p>
                     {/*Start and end dates*/}
-                    <Header5>Start date</Header5>
+                    <Header5>Дата начала</Header5>
                     <p style={{ marginBottom: "40px" }}>
                         {formatDate(dayjs(newSurvey.startedAt).toDate())}
                     </p>
-                    <Header5>End date</Header5>
+                    <Header5>Дата окончания</Header5>
                     <p style={{ marginBottom: "40px" }}>
                         {formatDate(dayjs(newSurvey.completedAt).toDate())}
                     </p>
                     {/*Survey questions*/}
-                    <Header5>Survey questions</Header5>
+                    <Header5>Вопросы опроса</Header5>
                     <TableContainer sx={{ marginBottom: "40px" }}>
                         <Table>
                             <TableBody>
@@ -658,13 +658,13 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                         </Table>
                     </TableContainer>
                     {/*Survey recipients*/}
-                    <Header5>Survey recipients</Header5>
+                    <Header5>Опрашиваемые</Header5>
                     <TableContainer sx={{ marginBottom: "40px" }}>
                         <Table>
                             <TableHead>
                                 <TableRow>
-                                    <TableHeaderCell><b>Name</b></TableHeaderCell>
-                                    <TableHeaderCell><b>Team</b></TableHeaderCell>
+                                    <TableHeaderCell><b>Имя</b></TableHeaderCell>
+                                    <TableHeaderCell><b>Команда</b></TableHeaderCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
@@ -682,12 +682,12 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
             {/*Validation messages to inform user of survey requirements*/}
             {validation[3] && 
                 <h4 style={{ color: "#D92D20", marginBottom: "20px" }}>
-                    Survey must have at least one question
+                    Опрос должен содержать хотя бы один вопрос
                 </h4>
             }
             {validation[4] &&
                 <h4 style={{ color: "#D92D20", marginBottom: "20px" }}>
-                    Survey must have at least one recipient
+                    Опрос должен содержать хотя бы одного опрашиваемого
                 </h4>
             }
             {/*Navigation buttons*/}
@@ -698,10 +698,10 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                 spacing={2}
             >
                 <HRMButton mode="secondaryB" onClick={previousPage}>
-                    {pageNumber === 1 ? "Cancel" : "Previous"}
+                    {pageNumber === 1 ? "Отмена" : "Назад"}
                 </HRMButton>
                 <HRMButton mode="primary" onClick={nextPage}>
-                    {pageNumber === 5 ? initialSurvey ? "Update" : "Send" : "Next"}
+                    {pageNumber === 5 ? initialSurvey ? "Обновить" : "Отправить" : "Далее"}
                 </HRMButton>
             </Stack>
             {/*Popup components for setting the starting and ending dates of the new survey*/}

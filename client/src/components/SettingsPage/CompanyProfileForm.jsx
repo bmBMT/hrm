@@ -138,7 +138,7 @@ export default function CompanyProfileForm({ style }) {
 				setToast({
 					open: true,
 					severity: 'success',
-					message: 'Company profile updated successfully',
+					message: 'Информация о компании были изменены',
 				});
 			})
 			.catch(error => {
@@ -146,7 +146,7 @@ export default function CompanyProfileForm({ style }) {
 				setToast({
 					open: true,
 					severity: 'error',
-					message: 'Company profile updated failed. Please try again',
+					message: 'Ошибка при изменении информации о компании. Пожалуйста попробуйте ещё раз',
 				});
 			});
 	};

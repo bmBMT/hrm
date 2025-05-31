@@ -14,19 +14,19 @@ export const tabNames = {
 
 export const dialogTitle = {
   add: {
-    [tabNames.departments]: "Add a new department",
-    [tabNames.jobtitles]: "Add a new job title",
-    [tabNames.timeoffs]: "Add policy",
+    [tabNames.departments]: "Добавить новый отдел",
+    [tabNames.jobtitles]: "Добавить новую должность",
+    [tabNames.timeoffs]: "Добавить политику",
   },
   edit: {
-    [tabNames.departments]: "Rename department",
-    [tabNames.jobtitles]: "Rename job title",
-    [tabNames.timeoffs]: "Редактировать policy",
+    [tabNames.departments]: "Переименовать отдел",
+    [tabNames.jobtitles]: "Переименовать должность",
+    [tabNames.timeoffs]: "Редактировать политику",
   },
   delete: {
-    [tabNames.departments]: "Where do you want to transfer affected employees?",
-    [tabNames.jobtitles]: "Where do you want to transfer affected employees?",
-    [tabNames.timeoffs]: "Reassign all employees to another policy",
+    [tabNames.departments]: "Куда перенести затронутых сотрудников?",
+    [tabNames.jobtitles]: "Куда перенести затронутых сотрудников?",
+    [tabNames.timeoffs]: "Переназначить всех сотрудников на другую политику",
   },
 };
 

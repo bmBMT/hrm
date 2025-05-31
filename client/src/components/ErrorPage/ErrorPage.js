@@ -37,9 +37,9 @@ const Button = styled(Link)`
 const ErrorPage = ({ message }) => {
   return (
     <Container role="alert" aria-live="polite">
-      <Heading>We cannot find this page</Heading>
-      <Text>{message || 'Either the URL doesn’t exist, or you don’t have access to it.'}</Text>
-      <Button to="/">Go to the main dashboard</Button>
+      <Heading>Мы не можем найти эту страницу</Heading>
+      <Text>{message || 'Такой страницы не существует, или у вас нет прав для просмотра'}</Text>
+      <Button to="/">Вернуться на главную страницу</Button>
     </Container>
   );
 };

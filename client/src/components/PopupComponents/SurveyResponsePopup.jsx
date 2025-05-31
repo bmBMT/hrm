@@ -94,8 +94,8 @@ export default function SurveyResponsePopup({survey, hasPrev, prev, hasNext, nex
             {/*Survey questions and responses*/}
             <table cellSpacing="20" style={{ width: "100%" }}>
                 <tr>
-                    <StyledTD><h3>Question</h3></StyledTD>
-                    <StyledTD><h3>Response</h3></StyledTD>
+                    <StyledTD><h3>Вопрос</h3></StyledTD>
+                    <StyledTD><h3>Ответ</h3></StyledTD>
                 </tr>
                 {survey.satisfactionSurveyResponses.map((q) => (
                     <tr>

@@ -24,13 +24,13 @@ const ErrorPage = () => {
             lineHeight: "38px",
             textAlign: "left",
             margin:"5px 0px",
-        }}>We cannot find this page</p>
+        }}>Мы не можем найти эту страницу</p>
         <p style={{
             fontSize: "13px",
             fontWeight: "400",
             lineHeight: "23px",
             margin:"10px 0px",
-        }}>Either the URL doesn't exist, or you don't have access to it</p>
+        }}>Такой страницы не существует, или у вас нет прав для просмотра</p>
         <Button
             onClick={handleClick}
             sx={{
@@ -50,7 +50,7 @@ const ErrorPage = () => {
                 border: "1px solid #602ece",
               },
             }}
-          >Go to the main dashboard</Button>
+          >Вернуться на главную страницу</Button>
     </div>
   )
 }

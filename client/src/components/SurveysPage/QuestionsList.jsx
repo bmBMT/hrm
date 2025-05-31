@@ -102,8 +102,8 @@ export default function QuestionsList({questions, setQuestions, style}) {
                     {/*Table header*/}
                     <TableHead>
                         <TableRow sx={{ backgroundColor: "#F9FAFB" }}>
-                            <TableHeaderCell><b>Order</b></TableHeaderCell>
-                            <TableHeaderCell colSpan={2}><b>Question Text</b></TableHeaderCell>
+                            <TableHeaderCell><b>Вопрос</b></TableHeaderCell>
+                            <TableHeaderCell colSpan={2}><b>Текст вопроса</b></TableHeaderCell>
                         </TableRow>
                     </TableHead>
                     {/*List all questions*/}
@@ -157,7 +157,7 @@ export default function QuestionsList({questions, setQuestions, style}) {
                                             onClick={() => remove(index)}
                                         >
                                             <b style={{ color: "#475467" }}>
-                                                Delete
+                                                Удалить
                                             </b>
                                         </HRMButton>
                                         <HRMButton 

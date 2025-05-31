@@ -38,7 +38,7 @@ export default function ChooseManager() {
             fontSize: "13px",
           }}
         >
-          Select manager of {currentEmployee.firstName}{" "}
+          Выбериет менеджета {currentEmployee.firstName}{" "}
           {currentEmployee.lastName}
         </Typography>
         <Autocomplete

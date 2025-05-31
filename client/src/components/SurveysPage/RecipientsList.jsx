@@ -57,9 +57,9 @@ export default function RecipientsList({recipients, setRecipients, canEdit, styl
                         <TableHeaderCell 
                             sx={{ paddingLeft: canEdit ? "65px" : "24px" }}
                         >
-                            <b>Name</b>
+                            <b>Название</b>
                         </TableHeaderCell>
-                        <TableHeaderCell><b>Team</b></TableHeaderCell>
+                        <TableHeaderCell><b>Отдел</b></TableHeaderCell>
                     </TableRow>
                 </TableHead>
                 {/*List all recipients*/}

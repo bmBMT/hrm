@@ -87,10 +87,10 @@ export default function CustomDialog({
           sx={{ marginTop: "50px" }}
         >
           <HRMButton mode="secondaryB" onClick={onClose} color="primary">
-            Cancel
+            Отмена
           </HRMButton>
           <HRMButton mode="primary" onClick={form.handleSubmit(onSubmit)}>
-            Save
+            Сохранить
           </HRMButton>
         </Stack>
       </DialogContent>

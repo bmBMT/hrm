@@ -161,8 +161,8 @@ export default function HistoryTabContent({style}) {
                     <>
                         {/*Otherwise, display a message that there is no history*/}
                         <NoContentComponent>
-                            <h3>There is no time off history</h3>
-                            <p>Any updates about your time off history will be shown here.</p>
+                            <h3>История выходных пуста</h3>
+                            <p>Любое изменение в истории будут отображены здесь.</p>
                         </NoContentComponent>
                     </>
             }

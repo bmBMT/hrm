@@ -128,8 +128,8 @@ export default function UpdatesMenu({style}) {
                     <>
                         {/*Otherwise, display a message that there are no updates*/}
                         <NoContentComponent>
-                            <h3 style={{color:colors.darkGrey}}>You don't have any updates yet</h3>
-                            <p style={{color:colors.darkGrey}}>Any updates about your company will be shown here.</p>
+                            <h3 style={{color:colors.darkGrey}}>У вас пока нет обновлений</h3>
+                            <p style={{color:colors.darkGrey}}>Здесь вы увидите все обновления о нашей компании.</p>
                         </NoContentComponent>
                     </>
             

@@ -84,10 +84,10 @@ export default function SetupRolesMenu({advancePage, style}) {
         }, ...style}}>
             {/*Text*/}
             <h3 style={{margin: "1em auto", textAlign: "center"}}>
-                Select the roles to add
+                Выберите роли для добавления
             </h3>
             <p style={{margin: "1em auto 80px", textAlign: "center"}}>
-                You can modify the name or add more roles later
+                Вы можете изменить название или добавить роли позже
             </p>
             {/*Buttons*/}
             {formattedRoles.map((list) => (
@@ -115,7 +115,7 @@ export default function SetupRolesMenu({advancePage, style}) {
                     marginTop: "80px"
                 }}
             >
-                Add Roles
+                Добавить роли
             </HRMButton>
         </Box>
     );

@@ -210,19 +210,9 @@ const DocumentUpload = forwardRef((props, ref) => {
                     fontFamily: "Inter",
                   }}
                 >
-                  File name
+                  Имя файла
                 </TableCell>
-                <TableCell
-                  sx={{
-                    fontSize: "12px",
-                    fontWeight: "medium",
-                    color: "#475467",
-                    fontFamily: "Inter",
-                  }}
-                  align="left"
-                >
-                  Date uploaded
-                </TableCell>
+                <TableCell align="left"></TableCell>
                 <TableCell align="right"></TableCell>
               </TableRow>
             </TableHead>
@@ -274,7 +264,7 @@ const DocumentUpload = forwardRef((props, ref) => {
                           marginRight: "8px",
                         }}
                       >
-                        Delete
+                        Удалить
                       </Link>
                     </Stack>
                   </TableCell>

@@ -25,7 +25,7 @@ export default function TimeOffRequestSent({close, style}) {
             fontFamily: fonts.fontFamily
         }, ...style}}>
             <Stack direction="row" alignItems="center" spacing={4}>
-                <p>New time off request created successfully</p>
+                <p>Новый запрос на отгул был успешно создан</p>
                 <CloseIcon onClick={close} sx={{
                     backgroundColor: "#FFFFFFF",
                     "&:hover": {
