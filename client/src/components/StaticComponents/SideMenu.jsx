@@ -64,7 +64,7 @@ function CustomizedListItem(props) {
 const items = [
   { name: "Главная", menuItem: "home" },
   { name: "Профиль", menuItem: "myinfo" },
-  { name: "Люди", menuItem: "people" },
+  { name: "Сотрудники", menuItem: "people" },
   { name: "Выходные", menuItem: "timeoff" },
  // { name: "Reporting", menuItem: "reporting" },
 ];

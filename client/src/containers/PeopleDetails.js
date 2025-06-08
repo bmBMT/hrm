@@ -174,7 +174,7 @@ const tabItems = ({
       label: "Моя команда",
       child: (
         <AppTable
-          caption={"Люди в моей команде"}
+          caption={"Сотрудники в моей команде"}
           headCells={headCells}
           data={team}
           rowsPerPage={rowsPerPage}
@@ -316,7 +316,7 @@ export default function People({
           color={"inherent"}
           fontWeight={600}
         >
-          Люди
+          Сотрудники
         </Typography>
         {isAdmin && (
           <Button

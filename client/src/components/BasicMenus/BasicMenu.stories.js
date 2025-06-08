@@ -25,7 +25,7 @@ const listContent = <List>
             <ListItemIcon>
                 <PeopleOutlineIcon />
             </ListItemIcon>
-            <ListItemText primary="Люди" />
+            <ListItemText primary="Сотрудники" />
         </ListItemButton>
     </ListItem>
     <ListItem sx={{width: 300}} disablePadding>

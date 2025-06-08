@@ -51,7 +51,7 @@ export default function SideSidebar() {
         <List>
           <CustomListItem primary="Home" icon={<OtherHousesOutlinedIcon />} />
           <CustomListItem
-            primary="Люди"
+            primary="Сотрудники"
             icon={<PeopleOutlineOutlinedIcon />}
           />
           <CustomListItem
