@@ -2,7 +2,7 @@ import { readFile } from 'fs/promises';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import handlebars from 'handlebars';
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-core';
 import dayjs from 'dayjs';
 import 'dayjs/locale/ru.js';
 
