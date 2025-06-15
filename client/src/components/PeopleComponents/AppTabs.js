@@ -78,7 +78,7 @@ export default function CustomTabs(props) {
               fontSize: '13px',
             },
             ".MuiTabs-indicator": {
-              backgroundColor: '#7F56D9', 
+              backgroundColor: '#ea5e20', 
               fontWeight: 400,
               fontFamily:'Inter',
               fontSize: '13px',

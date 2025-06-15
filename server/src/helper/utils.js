@@ -115,7 +115,7 @@ async function createEmailContext({ empId, email, db, copyrightYear }) {
     employeeName: employee
       ? `${employee.firstName} ${employee.lastName}`
       : `Sir/Madam`,
-    companyName: company ? `${company.companyName}` : "BlueWave Labs",
+    companyName: company ? `${company.companyName}` : "ООО Кейсистемс",
     email: process.env.EMAIL, // Support email
     copyrightYear: copyrightYear? copyrightYear : 2024
   };

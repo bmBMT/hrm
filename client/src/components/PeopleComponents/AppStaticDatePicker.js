@@ -38,7 +38,7 @@ const customStyle = {
     justifyContent: "center",
   },
   ".css-knqc4i-MuiDialogActions-root>:not(style)~:not(style)": {
-    backgroundColor: "#7F56D9",
+    backgroundColor: "#ea5e20",
     color: "white",
     width: "50%",
     textTransform: "none",
@@ -57,13 +57,13 @@ const customStyle = {
     borderColor: "#EAECF0",
   },
   ".css-1wy8uaa-MuiButtonBase-root-MuiPickersDay-root.Mui-selected": {
-    backgroundColor: "#7F56D9",
+    backgroundColor: "#ea5e20",
   },
   ".css-innj4t-MuiPickersYear-yearButton.Mui-selected": {
-    backgroundColor: "#7F56D9",
+    backgroundColor: "#ea5e20",
   },
   ".css-i4bv87-MuiSvgIcon-root": {
-    color: "#7F56D9",
+    color: "#ea5e20",
     marginLeft: 3.5,
     width: 10,
   },

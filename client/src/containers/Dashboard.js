@@ -15,6 +15,7 @@ import SettingsPage from "../components/SettingsPage/SettingsPage";
 import SurveysPage from "../components/SurveysPage/SurveysPage";
 import { SettingsProvider } from "../components/SettingsPage/context";
 import RuequestsPage from '../components/requests/RequestsPage';
+import DocumentsPage from '../components/documents/DocumentsPage';
 const api = require("../assets/FetchServices");
 
 const dashboardMenu = {
@@ -126,6 +127,7 @@ export default function Dashboard() {
           {current.surveys && <SurveysPage />}
           {current.reporting && <ReportsMain />}
           {current.requests && <RuequestsPage />}
+          {current.documents && <DocumentsPage />}
           {current.settings && (
             <SettingsProvider>
               <SettingsPage />

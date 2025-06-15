@@ -33,7 +33,7 @@ const theme = createTheme({
 });
 // Predefined color palette for pie chart segments
 const predefinedColors = [
-	'#7F56D9', // 1st place
+	'#ea5e20', // 1st place
 	'#9E77ED', // 2nd place
 	'#B692F6', // 3rd place
 	'#D6BBFB', // 4th place

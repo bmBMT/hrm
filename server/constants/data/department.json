@@ -1,57 +1,57 @@
 [
   {
     "id": 1,
-    "departmentName": "Engineering and Development",
+    "departmentName": "Инжиниринг и разработка",
     "departmentManagerId": 53
   },
   {
     "id": 2,
-    "departmentName": "Product Management",
+    "departmentName": "Управление продуктом",
     "departmentManagerId": 69
   },
   {
     "id": 3,
-    "departmentName": "Quality Assurance",
+    "departmentName": "Контроль качества",
     "departmentManagerId": 9
   },
   {
     "id": 4,
-    "departmentName": "Sales and Marketing",
+    "departmentName": "Продажи и маркетинг",
     "departmentManagerId": 42
   },
   {
     "id": 5,
-    "departmentName": "Customer Support",
+    "departmentName": "Поддержка клиентов",
     "departmentManagerId": 57
   },
   {
     "id": 6,
-    "departmentName": "Human Resources",
+    "departmentName": "Отдел кадров",
     "departmentManagerId": 32
   },
   {
     "id": 7,
-    "departmentName": "Finance ",
+    "departmentName": "Финансы",
     "departmentManagerId": 55
   },
   {
     "id": 8,
-    "departmentName": "Administration",
+    "departmentName": "Администрация",
     "departmentManagerId": 50
   },
   {
     "id": 9,
-    "departmentName": "Research and Development",
+    "departmentName": "Научные исследования и разработки",
     "departmentManagerId": 71
   },
   {
     "id": 10,
-    "departmentName": "Legal",
+    "departmentName": "Юридический отдел",
     "departmentManagerId": 38
   },
   {
     "id": 11,
-    "departmentName": "Executive",
+    "departmentName": "Исполнительный отдел",
     "departmentManagerId": 1
   }
 ]

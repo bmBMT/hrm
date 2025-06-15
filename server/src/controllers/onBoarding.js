@@ -183,7 +183,7 @@ exports.completeOnboarding = async (req, res, next) => {
     try {
         const context = {
             employeeName: `${firstName} ${lastName}`,
-            senderName: "BlueWave Labs Management"
+            senderName: "ООО Кейсистемс Management"
         };
 
         const emailService = new EmailService();

@@ -64,6 +64,34 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING,
         allowNull: true,
       },
+      inn: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      kpp: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      bank: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      account: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      corr_account: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      bik: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      phone: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
     },
     {
       sequelize,

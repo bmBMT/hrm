@@ -162,7 +162,7 @@ const handleDelete = (index) => {
       boxShadow={4}
       gap={4}
       p={2}
-      sx={{ border: '2px solid #7F56D9',borderRadius:'12px' }}
+      sx={{ border: '2px solid #ea5e20',borderRadius:'12px' }}
       
     >
      
@@ -234,7 +234,7 @@ const handleDelete = (index) => {
           variant="determinate"
           disableShrink
           sx={{
-            color: "#7F56D9",
+            color: "#ea5e20",
             position: 'absolute',
             left: 0,
             [`& .${circularProgressClasses.circle}`]: {

@@ -20,7 +20,7 @@ export const Primary = {
             {
                 "respondentId": 1,
                 "orderNumber": 1,
-                "question": "How would you rate your satisfaction with the communication you received from BlueWave Labs?",
+                "question": "How would you rate your satisfaction with the communication you received from ООО Кейсистемс?",
                 "answer": ""
               },
               {

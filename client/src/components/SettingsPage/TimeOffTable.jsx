@@ -25,7 +25,7 @@ const Text = styled(Typography)({
 
 const EditButton = styled(Button)({
 	textTransform: 'none',
-	color: '#7F56D9',
+	color: '#ea5e20',
 	textDecoration: 'none',
 	fontWeight: '600',
 });

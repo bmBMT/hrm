@@ -42,7 +42,7 @@ function CreateTableRow(downloadable, key, handleDownload) {
         sx={{
           fontFamily: "Inter",
           fontWeight: "600",
-          color: "#7F56D9",
+          color: "#ea5e20",
         }}
         key={1}
       >
@@ -52,7 +52,7 @@ function CreateTableRow(downloadable, key, handleDownload) {
             border: "none",
             fontSize: "14px",
             cursor: "pointer",
-            color: "#7F56D9",
+            color: "#ea5e20",
             fontWeight: "600",
             background: "none",
             "&:hover": { backgroundColor: "transparent" },

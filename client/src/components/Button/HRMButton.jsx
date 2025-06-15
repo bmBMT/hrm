@@ -30,7 +30,7 @@ import { styled } from '@mui/system';
 export default function HRMButton({mode, children, startIcon, endIcon, onClick, style, enabled}) {
     const primaryStyle = {
         textTransform: "none",
-        backgroundColor: "#7F56D9",
+        backgroundColor: "#ea5e20",
         "&:hover": {
             backgroundColor: "#6941C6"
         },

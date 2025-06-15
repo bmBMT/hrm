@@ -1,0 +1,32 @@
+h1 {
+	font-size: 20px;
+	margin-bottom: 3mm;
+}
+
+hr {
+	border: 1px solid black;
+}
+
+main {
+	font-size: 10px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+p {
+	margin-bottom: 7.5pt;
+}
+
+ul, ol {
+	margin-left: 15px;
+}
+
+.small {
+	font-size: 9px;
+}
+
+.underline {
+	text-decoration: underline;
+}

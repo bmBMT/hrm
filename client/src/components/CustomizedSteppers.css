@@ -40,7 +40,7 @@
   .font-semibold {
     font-size: 13px;
     font-weight: 600;
-    color:'#7F56D9';
+    color:'#ea5e20';
     margin-bottom: 5px;
   }
   
@@ -52,7 +52,7 @@
   
   .font-regular {
     font-size: 13px;
-    color:'#7F56D9';
+    color:'#ea5e20';
   }
   
   /* Hide the default file input */

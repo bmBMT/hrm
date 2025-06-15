@@ -135,10 +135,10 @@
     width: 120px;
     height: 34px;
     border-radius: 8px;
-    border: 2px solid #7F56D9;
+    border: 2px solid #ea5e20;
     background-color: var(
       --Component-colors-Components-Buttons-Primary-button-primary-bg,
-      #7f56d9
+      #ea5e20
     );
     color: var(
       --Component-colors-Components-Buttons-Primary-button-primary-fg,
@@ -148,11 +148,11 @@
   }
 
 .button-primary2:hover {
-    background-color: #7f56d9;
+    background-color: #ea5e20;
 }
 
 .button-primary2:active {
-    background-color: #7f56d9;
+    background-color: #ea5e20;
     box-shadow: none;
 }
 
@@ -166,6 +166,6 @@
     cursor: not-allowed;
     box-shadow: none;
     &:hover {
-    background-color: #7f56d9;
+    background-color: #ea5e20;
     }
 }

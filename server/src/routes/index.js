@@ -34,6 +34,7 @@ const taskName = require("./taskName.js");
 const surveyQuestion = require("./surveyQuestion");
 const surveyResponse = require("./surveyResponse");
 const employeeRequest = require("./employeeRequest");
+const documents_pdf = require("./documents_pdf");
 
 module.exports = (router) => {
   authentication(router);
@@ -67,6 +68,7 @@ module.exports = (router) => {
   surveyResponse(router);
   satisfactionSurvey(router);
   employeeRequest(router);
+  documents_pdf(router)
 
   return router;
 };

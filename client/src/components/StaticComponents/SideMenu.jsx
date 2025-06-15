@@ -18,6 +18,8 @@ import { useState, forwardRef, useContext } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { colors } from "../../assets/Styles";
 import StateContext from "../../context/StateContext";
+import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
+
 const Link = forwardRef(function Link(itemProps, ref) {
   return (
     <RouterLink
@@ -55,6 +57,7 @@ function CustomizedListItem(props) {
           {index === 6 && <SettingsOutlinedIcon />}
           {index === 7 && <SupportIcon />}
           {index === 8 && <BadgeIcon />}
+          {index === 9 && <DocumentScannerIcon />}
         </ListItemIcon>
         <ListItemText primary={primary} />
       </ListItemButton>
@@ -159,6 +162,13 @@ export default function SideMenu({ style, onSelect }) {
                 index={8}
                 menuItem={"requests"}
                 selected={selectedIndex === 8}
+                handleListItemClick={handleListItemClick}
+              />
+              <CustomizedListItem
+                primary={"Эл. документы"}
+                index={9}
+                menuItem={"documents"}
+                selected={selectedIndex === 9}
                 handleListItemClick={handleListItemClick}
               />
             </>

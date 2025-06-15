@@ -37,14 +37,14 @@ const RuequestsPage = () => {
 					onClick={() => setShowCreateDialog(true)}
 					sx={{
 						height: '34px',
-						border: '1px solid #7F56D9',
-						backgroundColor: '#7F56D9',
+						border: '1px solid #ea5e20',
+						backgroundColor: '#ea5e20',
 						fontSize: 13,
 						fontWeight: 400,
 						textTransform: 'none',
 						'&:hover': {
-							backgroundColor: '#602ece',
-							border: '1px solid #602ece',
+							backgroundColor: '#d46331',
+							border: '1px solid #d46331',
 						},
 					}}
 				>

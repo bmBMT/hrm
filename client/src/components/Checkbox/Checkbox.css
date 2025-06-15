@@ -1,6 +1,6 @@
 /* Checkboxes and radio buttons */
 .checkbox, .radio {
-    accent-color: #7F56D9;
+    accent-color: #ea5e20;
 }
 
 .checkbox {
@@ -8,7 +8,7 @@
 }
 
 .checkbox:active, .radio:active {
-    accent-color: #7F56D9;
+    accent-color: #ea5e20;
     outline: 5px solid #9E77ED3D;
 }
 

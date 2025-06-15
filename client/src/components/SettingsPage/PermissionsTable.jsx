@@ -46,7 +46,7 @@ const TableBodyCell = styled(TableCell)({
 
 const CustomRadio = styled(Radio)({
   "&.Mui-checked": {
-    color: "#7F56D9",
+    color: "#ea5e20",
   },
 });
 
@@ -156,7 +156,7 @@ export default function PermissionsTable({ contentList, style, open }) {
                     size="small"
                     sx={{
                       "&.Mui-checked": {
-                        color: "#7F56D9",
+                        color: "#ea5e20",
                       },
                     }}
                   />
@@ -171,7 +171,7 @@ export default function PermissionsTable({ contentList, style, open }) {
                     size="small"
                     sx={{
                       "&.Mui-checked": {
-                        color: "#7F56D9",
+                        color: "#ea5e20",
                       },
                     }}
                   />

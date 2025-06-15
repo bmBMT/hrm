@@ -86,7 +86,7 @@ export default function HeadcountChanges() {
 					<LineChart
 						xAxis={[{ data: xData, label: 'Month', scaleType: 'point' }]}
 						yAxis={[{ min: 0, max: 100, label: 'Number of employees' }]}
-						series={[{ curve: 'natural', data, showMark: false, area: false, color: '#7F56D9' }]}
+						series={[{ curve: 'natural', data, showMark: false, area: false, color: '#ea5e20' }]}
 						width={400}
 						height={300}
 						// margin={{ top: 5, bottom: 22, left: 0 }}

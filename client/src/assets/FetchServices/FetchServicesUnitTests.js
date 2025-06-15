@@ -753,7 +753,7 @@ const newEmployee = {
   emergencyContactName: "John Chin",
   emergencyContactRelationship: "Father",
   emergencyContactPhoneNumber: "5877332379",
-  streetAddress: "00900 Oakridge Alley",
+  streetAddress: "ул. Константина Иванова, 50, Чебоксары, Чувашская Респ., Россия, 428003",
   unitSuite: "Apt 1765",
   city: "Stony Plain",
   country: "Canada",
@@ -764,11 +764,11 @@ const newEmployee = {
 };
 
 const companyTestData = {
-  companyName: "BlueWave Labs_" + timeStamp(),
+  companyName: "ООО Кейсистемс_" + timeStamp(),
   companyWebsite: "www.bluewavelabs.ca",
   administratorEmail: `elwyn.ginnety_${timeStamp()}@bluewavelabs.ca`,
   companyDomain: "bluewavelabs",
-  streetAddress: "00900 Oakridge Alley",
+  streetAddress: "ул. Константина Иванова, 50, Чебоксары, Чувашская Респ., Россия, 428003",
   unitSuite: "Apt 1765",
   postalZipCode: "L5V 1E5",
   city: "Stony Plain",

@@ -205,7 +205,7 @@ const RequestCreateDialog = ({ show, setShow, requestId = null }) => {
 					fullWidth
 					variant='contained'
 					type='submit'
-					sx={{ mr: 1, border: '1px solid #7F56D9', backgroundColor: '#7F56D9' }}
+					sx={{ mr: 1, border: '1px solid #ea5e20', backgroundColor: '#ea5e20' }}
 				>
 					Создать
 				</Button>

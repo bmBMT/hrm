@@ -111,7 +111,7 @@ const sendEmail = async ({ surveyObject, emailData, frontendUrl }) => {
   for (let employee of emailData) {
     // Create and send email
     const context = {
-      companyName: company ? `${company.companyName}` : "BlueWave Labs",
+      companyName: company ? `${company.companyName}` : "ООО Кейсистемс",
       surveyName: surveyObject.name,
       employeeName: `${employee.firstName} ${employee.lastName}`,
       url: `${frontendUrl}${employee.accessToken}`, // Unique url

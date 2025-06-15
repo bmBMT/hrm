@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@page {
+	size: A4 portrait;
+	margin: 5mm 5mm 1cm 5mm;
+}
+
+.body {
+	font-family: 'Montserrat', sans-serif;
+	width: 210mm;
+	height: 297mm;
+}
+
+.wrapper {
+	position: relative;
+	margin: 5mm;
+	padding: 10mm 15mm 14mm 4mm;
+	height: 0%;
+}
+
+h1 {
+	font-size: 20px;
+	margin-bottom: 3mm;
+	text-align: center;
+}
+
+h2 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 25pt;
+	margin-bottom: 7.5pt;
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}

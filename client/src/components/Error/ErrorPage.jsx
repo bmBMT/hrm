@@ -36,8 +36,8 @@ const ErrorPage = () => {
             sx={{
               width: "214px",
               height: "34px",
-              border: "1px solid #7F56D9",
-              backgroundColor: "#7F56D9",
+              border: "1px solid #ea5e20",
+              backgroundColor: "#ea5e20",
               color:"#FFFFFF",
               fontSize: 13,
               fontWeight: 400,
@@ -46,8 +46,8 @@ const ErrorPage = () => {
               boxShadow: '0px 1px 2px 0px #1018280D',
               margin:"45px 0px",
               "&:hover": {
-                backgroundColor: "#602ece",
-                border: "1px solid #602ece",
+                backgroundColor: "#d46331",
+                border: "1px solid #d46331",
               },
             }}
           >Вернуться на главную страницу</Button>

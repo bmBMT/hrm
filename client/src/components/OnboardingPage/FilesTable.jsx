@@ -57,7 +57,7 @@ export default function FilesTable({files, style}) {
                                             style={{
                                                 textDecoration: "none",
                                                 fontWeight: "bold",
-                                                color: "#7F56D9"
+                                                color: "#ea5e20"
                                             }}
                                         >
                                             Скачать

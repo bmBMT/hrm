@@ -263,7 +263,7 @@ function WeeklyNewEmp(props) {
 							xAxis={[{ scaleType: 'band', dataKey: 'week' }]}
 							{...{
 								yAxis: [{ label: '', min: 0, max: 5, ticks: [0, 1, 2], tickCount: 3, tickFormat: value => value }],
-								series: [{ dataKey: 'counts', color: '#7F56D9' }],
+								series: [{ dataKey: 'counts', color: '#ea5e20' }],
 								width: 500,
 								height: 240,
 								sx: { [`& .${axisClasses.directionY} .${axisClasses.label}`]: { transform: 'translateX(-10px)' } },

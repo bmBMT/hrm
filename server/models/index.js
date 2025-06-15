@@ -44,6 +44,7 @@ db.timeOff = require("./timeOff")(sequelize, Sequelize);
 db.timeOffHistory = require("./timeOffHistory")(sequelize, Sequelize);
 db.passwordHistory = require("./passwordHistory")(sequelize, Sequelize);
 db.employeeRequest = require("./employeeRequest")(sequelize, Sequelize);
+db.pdfDocuments = require("./pdfDocuments")(sequelize, Sequelize);
 
 db.notification = require("./notification")(sequelize, Sequelize);
 db.notificationRecipient = require("./notificationRecipient")(

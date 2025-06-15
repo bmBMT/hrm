@@ -18,7 +18,7 @@ const styles = {
     fontSize: "1rem",
   },
     ".css-1wy8uaa-MuiButtonBase-root-MuiPickersDay-root.Mui-selected": {
-    backgroundColor: "#7F56D9",
+    backgroundColor: "#ea5e20",
   },
   ".css-9reuh9-MuiPickersArrowSwitcher-root": {
     display: "inline-flex",

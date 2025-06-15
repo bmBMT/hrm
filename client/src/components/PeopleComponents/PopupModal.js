@@ -6,7 +6,7 @@ import "./PopupModal.css";
 
 const saveButtonStyle = {
   textTransform: "none",
-  backgroundColor: "#7F56D9",
+  backgroundColor: "#ea5e20",
   font: "400 13px/24px Inter, sans-serif",
   color: "#fff",
   "&:hover": {

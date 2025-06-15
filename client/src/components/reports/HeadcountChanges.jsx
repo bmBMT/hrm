@@ -178,7 +178,7 @@ export default function HeadcountChanges() {
 								{
 									data: pData,
 									showMark: false,
-									color: '#7F56D9',
+									color: '#ea5e20',
 								},
 							]}
 							xAxis={[{ scaleType: 'point', data: xLabels }]}
@@ -205,7 +205,7 @@ export default function HeadcountChanges() {
 								disableTicks: true,
 								labelStyle: {
 									fontSize: 25,
-									color: '#7F56D9',
+									color: '#ea5e20',
 								},
 								tickLabelStyle: {
 									textAnchor: 'start',

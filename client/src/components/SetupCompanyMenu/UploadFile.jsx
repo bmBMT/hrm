@@ -105,7 +105,7 @@ export default function UploadFile({setFile, style}) {
                         onMouseOut={() => document.getElementById("uploadFileLink").style.cursor="auto"}
                         onClick={handleClick}
                         style={{
-                            color: "#7F56D9", 
+                            color: "#ea5e20", 
                             textDecoration: "none", 
                             fontWeight: "bold",
                             
