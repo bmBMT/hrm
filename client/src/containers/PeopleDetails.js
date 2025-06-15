@@ -38,18 +38,18 @@ function formatTableData({
     const data = [];
     // Create and push handleEdit function menu
     data.push({
-      label: "Редактировать employee",
+      label: "Редактировать сотрудника",
       action: () => handleEdit(employee),
     });
 
     // Create and push handleSurvey function menu
     data.push({
-      label: "Send exit survey",
+      label: "Отправить выходной опрос",
       action: () => handleSurvey(employee),
     });
     // Create and push handleTermination function menu
     data.push({
-      label: "End employment",
+      label: "Уволить",
       action: () => handleTermination(employee),
     });
 

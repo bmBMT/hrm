@@ -196,7 +196,7 @@ function SingupPage({ user, token, onSubmit }) {
     <div className="sign-up-body">
       <div className="sign-up-container">
         <div className="logo-container">
-          <img src={stateContext.state.logo} alt="logo" />
+          <img src={'/logo.jpg'} alt="logo" width={300} />
         </div>
         <h2 style={{ marginBottom: "0px" }}>
           {user ? "Activate account" : "Create HRM admin account"}

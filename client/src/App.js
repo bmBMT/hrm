@@ -8,22 +8,25 @@ import OffboardingPage from "./components/OffBoardingComponents/OffBoardingPage.
 import EmployeeOnboarding from "./containers/EmployeeOnboarding.js";
 import ResponsePage from "./components/SurveysPage/ResponsePage.jsx";
 import ErrorPage from "./components/Error/ErrorPage.jsx";
+import ReactQueryProvider from './context/ReactQueryClient.jsx';
 //import Driver from "./components/TestComponents/Driver.js"
 
 function App() {
-     return (
-    <StateProvider>
-       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/onboarding" element={<EmployeeOnboarding />} />
-        <Route path="/resetpassword/:id" element={<SetNewPasswordPage />} />
-        <Route path="/complete-signup/:token" element={<CompleteSignup />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/off-boarding/:token" element={<OffboardingPage />} />
-        <Route path="/satisfactionsurvey/:token" element={<ResponsePage />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes> 
-    </StateProvider>
+  return (
+    <ReactQueryProvider>
+      <StateProvider>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/onboarding" element={<EmployeeOnboarding />} />
+          <Route path="/resetpassword/:id" element={<SetNewPasswordPage />} />
+          <Route path="/complete-signup/:token" element={<CompleteSignup />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/off-boarding/:token" element={<OffboardingPage />} />
+          <Route path="/satisfactionsurvey/:token" element={<ResponsePage />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </StateProvider>
+    </ReactQueryProvider>
   );
 }
 

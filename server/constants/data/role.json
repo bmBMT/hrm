@@ -1,169 +1,169 @@
 [
   {
     "id": 1,
-    "title": "Production Designer",
+    "title": "Продакшн-дизайнер",
     "minimumSalary": 6000,
     "maximumSalary": 9500
   },
   {
     "id": 2,
-    "title": "Product Manager",
+    "title": "Продукт-менеджер",
     "minimumSalary": 10500,
     "maximumSalary": 15000
   },
   {
     "id": 3,
-    "title": "Frontend Developer",
+    "title": "Фронтенд-разработчик",
     "minimumSalary": 8700,
     "maximumSalary": 10500
   },
   {
     "id": 4,
-    "title": "Backend Developer",
+    "title": "Бэкенд-разработчик",
     "minimumSalary": 9000,
     "maximumSalary": 10500
   },
   {
     "id": 5,
-    "title": "Fullstack Developer",
+    "title": "Фулстек-разработчик",
     "minimumSalary": 9700,
     "maximumSalary": 14200
   },
   {
     "id": 6,
-    "title": "UX Designer",
+    "title": "UX-дизайнер",
     "minimumSalary": 5700,
     "maximumSalary": 10500
   },
   {
     "id": 7,
-    "title": "UX Copywriter",
+    "title": "UX-копирайтер",
     "minimumSalary": 7500,
     "maximumSalary": 13500
   },
   {
     "id": 8,
-    "title": "UI Designer",
+    "title": "UI-дизайнер",
     "minimumSalary": 9500,
     "maximumSalary": 16500
   },
   {
     "id": 9,
-    "title": "QA Engineer",
+    "title": "Инженер по тестированию (QA)",
     "minimumSalary": 8000,
     "maximumSalary": 16200
   },
   {
     "id": 10,
-    "title": "Finance Manager",
+    "title": "Финансовый менеджер",
     "minimumSalary": 9500,
     "maximumSalary": 11500
   },
   {
     "id": 11,
-    "title": "Accountant",
+    "title": "Бухгалтер",
     "minimumSalary": 7500,
     "maximumSalary": 10200
   },
   {
     "id": 12,
-    "title": "Human Resource Manager",
+    "title": "Менеджер по персоналу",
     "minimumSalary": 9500,
     "maximumSalary": 11500
   },
   {
     "id": 13,
-    "title": "IT Risk Analyst",
+    "title": "Аналитик IT-рисков",
     "minimumSalary": 9500,
     "maximumSalary": 11500
   },
   {
     "id": 14,
-    "title": "Administration Assistant",
+    "title": "Ассистент администрации",
     "minimumSalary": 4000,
     "maximumSalary": 7000
   },
   {
     "id": 15,
-    "title": "Legal Counsel",
+    "title": "Юрисконсульт",
     "minimumSalary": 5500,
     "maximumSalary": 10500
   },
   {
     "id": 16,
-    "title": "Marketing Representative",
+    "title": "Представитель отдела маркетинга",
     "minimumSalary": 5500,
     "maximumSalary": 10500
   },
   {
     "id": 17,
-    "title": "Human Resources Representative",
+    "title": "Специалист по кадрам",
     "minimumSalary": 5500,
     "maximumSalary": 10500
   },
   {
     "id": 18,
-    "title": "Legal Clerk",
+    "title": "Юридический клерк",
     "minimumSalary": 5500,
     "maximumSalary": 10500
   },
   {
     "id": 19,
-    "title": "Customer Service representative",
+    "title": "Представитель службы поддержки",
     "minimumSalary": 5700,
     "maximumSalary": 10700
   },
   {
     "id": 20,
-    "title": "Software Tester",
+    "title": "Тестировщик ПО",
     "minimumSalary": 8000,
     "maximumSalary": 11500
   },
   {
     "id": 21,
-    "title": "Software Engineer",
+    "title": "Инженер-программист",
     "minimumSalary": 12000,
     "maximumSalary": 20000
   },
   {
     "id": 22,
-    "title": "Marketing Manager",
+    "title": "Менеджер по маркетингу",
     "minimumSalary": 10500,
     "maximumSalary": 13500
   },
   {
     "id": 23,
-    "title": "Finance Officer",
+    "title": "Финансовый специалист",
     "minimumSalary": 4500,
     "maximumSalary": 7500
   },
   {
     "id": 24,
-    "title": "Customer Support Specialist",
+    "title": "Специалист по поддержке клиентов",
     "minimumSalary": 8500,
     "maximumSalary": 10500
   },
   {
     "id": 25,
-    "title": "CEO/President",
+    "title": "Генеральный директор",
     "minimumSalary": 75000,
     "maximumSalary": 100000
   },
   {
     "id": 26,
-    "title": "Administration Manager",
+    "title": "Административный менеджер",
     "minimumSalary": 10000,
     "maximumSalary": 12500
   },
   {
     "id": 27,
-    "title": "Research & Development Manager",
+    "title": "Менеджер по исследованиям и разработкам",
     "minimumSalary": 11000,
     "maximumSalary": 14000
   },
   {
     "id": 28,
-    "title": "Principal Architect",
+    "title": "Главный архитектор",
     "minimumSalary": 9700,
     "maximumSalary": 12200
   }

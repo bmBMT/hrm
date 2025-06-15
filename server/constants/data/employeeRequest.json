@@ -1,0 +1,10 @@
+[
+	{
+		"id": 1,
+		"roleId": 20,
+		"deadlineDate": "2023-12-31T00:00:00.000Z",
+		"comment": "Комментарий",
+		"createdById": 1,
+		"status": "Pending"
+	}
+]

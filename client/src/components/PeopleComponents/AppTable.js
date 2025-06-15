@@ -90,7 +90,7 @@ const getColumnName = (data) => {
 };
 
 // Utility function to create a TableRow.
-function CreateTableRow(headCell, headCellIds, row, rowIndex, handleSelection) {
+function CreateTableRow(headCell, headCellIds, row, rowIndex, handleSelection, customActions) {
   if (row.cells) {
     return (
       <TableRow tabIndex={-1} key={rowIndex}>
@@ -108,13 +108,18 @@ function CreateTableRow(headCell, headCellIds, row, rowIndex, handleSelection) {
         if (row[key]) {
           return (
             <TableCell key={index} align="left">
-              {row[key]}
+              {'format' in headCell[index] ? headCell[index].format(row[key]) : row[key]}
             </TableCell>
           );
         } else {
           return <TableCell key={index} align="left"></TableCell>;
         }
       })}
+      {!!customActions && (
+        <TableCell align="left">
+          {customActions(row)}
+        </TableCell>
+      )}
     </TableRow>
   );
 }
@@ -229,6 +234,7 @@ export default function AppTable(props) {
     handleSelection,
     loading,
     showActionHeader,
+    customActions
   } = props;
   const [order, setOrder] = useState("asc");
   const [orderBy, setOrderBy] = useState("name");
@@ -243,6 +249,9 @@ export default function AppTable(props) {
     setOrder(isAsc ? "desc" : "asc");
     setOrderBy(property);
   };
+
+  console.log(data);
+
 
   useEffect(() => {
     setDataSize(data.length);
@@ -262,7 +271,7 @@ export default function AppTable(props) {
         (page - 1) * rowsPerPage,
         (page - 1) * rowsPerPage + rowsPerPage
       ),
-    [order, orderBy, page, column, dataSize, loading]
+    [order, orderBy, page, column, dataSize, loading, data]
   );
   if (loading) {
     return (
@@ -274,9 +283,9 @@ export default function AppTable(props) {
   if (data.length === 0) {
     return (
       <Box sx={{ padding: 16 }}>
-      <NoContentComponent>
-        <p>Данные отсутствуют</p>
-      </NoContentComponent>
+        <NoContentComponent>
+          <p>Данные отсутствуют</p>
+        </NoContentComponent>
       </Box>
     );
   }
@@ -313,7 +322,8 @@ export default function AppTable(props) {
                   columnNames,
                   row,
                   index,
-                  handleSelection
+                  handleSelection,
+                  customActions
                 );
               })}
             </TableBody>

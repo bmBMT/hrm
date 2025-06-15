@@ -30,6 +30,15 @@ module.exports = {
     displayInfo(count, "role");
   },
 
+  populateEmployeeRequestsTable: async function (db) {
+    const datas = require("./employeeRequest.json");
+    removeKey(datas, "id");
+    const results = await db.employeeRequest.bulkCreate(datas, {
+      validate: true,
+    });
+    displayInfo(results.length, "employeeRequest");
+  },
+
   populateUserTable: async function (db) {
     const users = require("./appUser.json");
     removeKey(users, "id");
@@ -377,6 +386,7 @@ module.exports = {
     await this.populateFileNameTable(db);
     await this.populateSurveyQuestionTable(db);
     await this.populateTaskNameTable(db);
+    await this.populateEmployeeRequestsTable(db);
     // await this.populateOnboardingTable(db);
     // await this.populateTaskTable(db);
     // await this.populateSurveyResponseTable(db);

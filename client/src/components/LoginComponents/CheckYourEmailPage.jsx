@@ -29,7 +29,7 @@ const CheckYourEmailPage = () => {
     <body class="login-body">
       <div className="login-container">
         <div className="logo-container">
-          <img src={stateContext.state.logo} alt="logo" />
+          <img src={'/logo.jpg'} alt="logo" width={300} />
         </div>
         <h2>Проверьте вашу эл. почту</h2>
         <h3 style={{ margin: "0px" }}>{message}</h3>

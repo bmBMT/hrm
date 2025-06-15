@@ -139,7 +139,7 @@ function SetNewPassword({ user, onSubmit }) {
 		<div className='sign-up-body'>
 			<div className='sign-up-container'>
 				<div className='logo-container'>
-					<img src={stateContext.state.logo} alt='logo' />
+					<img src={'/logo.jpg'} alt='logo' width={300} />
 				</div>
 				<h2 style={{ marginBottom: '0px' }}>Установить новый пароль</h2>
 				<h3>Новый пароль должен отличаться от ранее использованных паролей.</h3>

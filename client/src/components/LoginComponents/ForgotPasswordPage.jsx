@@ -36,7 +36,7 @@ const ForgotPasswordPage = () => {
     <body class="login-body">
       <div className="login-container">
         <div className="logo-container">
-          <img src={stateContext.state.logo} alt="logo" />
+          <img src={'/logo.jpg'} alt="logo" width={300} />
         </div>
         <h2 style={{ marginBottom: "0px" }}>Забыли пароль?</h2>
         <h3>Не беспокойтесь, мы вышлем вам инструкции для сброса.</h3>

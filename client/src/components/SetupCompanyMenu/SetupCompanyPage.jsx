@@ -55,7 +55,7 @@ export default function SetupCompanyPage({ style }) {
 			}}
 		>
 			<img
-				src={stateContext.state.logo}
+				src={'/logo.jpg'}
 				alt={'Company Logo'}
 				style={{
 					display: 'block',

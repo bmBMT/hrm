@@ -29,7 +29,7 @@ function PasswordResetPage() {
 		<div className='login-body'>
 			<div className='login-container'>
 				<div className='logo-container'>
-					<img src={stateContext.state.logo} alt='logo' />
+					<img src={'/logo.jpg'} alt='logo' width={300} />
 				</div>
 				<h2 style={{ marginBottom: '0px' }}>Сбросить пароль</h2>
 				<h3>Ваш пароль успешно сброшен. Нажмите ниже, чтобы войти вручную.</h3>

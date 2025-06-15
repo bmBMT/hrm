@@ -41,7 +41,7 @@ function LoginPage() {
     <div className="login-body">
       <div className="login-container">
         <div className="logo-container">
-          <img src={stateContext.state.logo} alt="logo" />
+          <img src={'/logo.jpg'} alt="logo" width={300} />
         </div>
         <h2>Войдите в свою учетную запись</h2>
         {message && <div className="error-alert">{message}</div>}

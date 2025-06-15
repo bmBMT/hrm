@@ -165,7 +165,7 @@ export default function UpcomingTimeOffTable({
                                                 }}
                                                 enabled={period.status !== "Deleting"}
                                             >
-                                                <b>Delete</b>
+                                                <b>Удалить</b>
                                             </HRMButton>
                                             <HRMButton 
                                                 mode="secondaryA"

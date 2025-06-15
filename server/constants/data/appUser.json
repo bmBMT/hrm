@@ -8,8 +8,8 @@
     "passwordResetToken": null,
     "passwordResetTokenExpiresAt": null,
     "permissionId": 1,
-    "firstName": "Elwyn",
-    "lastName": "Ginnety",
+    "firstName": "Администратор",
+    "lastName": "",
     "access": "Permitted"
   },
   {

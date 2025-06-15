@@ -2,79 +2,79 @@
     {
         "empId": 50,
         "timeOffHistoryId": 34,
-        "subject": "New time off request",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Новый запрос на отгул",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 26,
-        "timeOffHistoryId" : 86,
-        "subject": "New team member added",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "timeOffHistoryId": 86,
+        "subject": "Добавлен новый член команды",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 41,
         "timeOffHistoryId": 120,
-        "subject": "New time off request",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Новый запрос на отгул",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 19,
-        "timeOffHistoryId" : 50,
-        "subject": "Your time off request has been sent",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "timeOffHistoryId": 50,
+        "subject": "Ваш запрос на отгул отправлен",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 77,
         "timeOffHistoryId": 15,
-        "subject": "New time off request",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Новый запрос на отгул",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 6,
         "timeOffHistoryId": 69,
-        "subject": "Your time off request has been sent",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Ваш запрос на отгул отправлен",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 88,
         "timeOffHistoryId": 300,
-        "subject": "New time off request",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Новый запрос на отгул",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 36,
         "timeOffHistoryId": 360,
-        "subject": "Your time off request has been sent",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Ваш запрос на отгул отправлен",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 55,
         "timeOffHistoryId": 412,
-        "subject": "New time off request",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Новый запрос на отгул",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 4,
         "timeOffHistoryId": 123,
-        "subject": "New team member added",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Добавлен новый член команды",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 18,
         "timeOffHistoryId": 188,
-        "subject": "New team member added",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Добавлен новый член команды",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 11,
         "timeOffHistoryId": 76,
-        "subject": "New time off request",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Новый запрос на отгул",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     },
     {
         "empId": 27,
         "timeOffHistoryId": 75,
-        "subject": "Your time off request has been sent",
-        "message": "Olivia Kylle from Marketing has requested 4 day (32 hours) time off between 1 July and 4 day"
+        "subject": "Ваш запрос на отгул отправлен",
+        "message": "Оливия Килл из отдела Маркетинг запросила 4 дня (32 часа) отгула с 1 июля по 4 июля"
     }
-  ]
+]

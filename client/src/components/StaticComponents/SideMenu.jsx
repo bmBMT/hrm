@@ -1,6 +1,5 @@
 import Stack from "@mui/system/Stack";
 import Box from "@mui/system/Box";
-import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -8,6 +7,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import BadgeIcon from '@mui/icons-material/Badge';
 import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
@@ -54,6 +54,7 @@ function CustomizedListItem(props) {
           {index === 5 && <PieChartOutlineOutlinedIcon />}
           {index === 6 && <SettingsOutlinedIcon />}
           {index === 7 && <SupportIcon />}
+          {index === 8 && <BadgeIcon />}
         </ListItemIcon>
         <ListItemText primary={primary} />
       </ListItemButton>
@@ -116,7 +117,7 @@ export default function SideMenu({ style, onSelect }) {
         paddingRight: "32px"
       }}>
         <img
-          src={stateContext.state.logo}
+          src={'/logo.jpg'}
           alt="Company Logo"
           style={{
             maxWidth: "200px",
@@ -151,6 +152,13 @@ export default function SideMenu({ style, onSelect }) {
                 index={5}
                 menuItem={"reporting"}
                 selected={selectedIndex === 5}
+                handleListItemClick={handleListItemClick}
+              />
+              <CustomizedListItem
+                primary={"Запросы"}
+                index={8}
+                menuItem={"requests"}
+                selected={selectedIndex === 8}
                 handleListItemClick={handleListItemClick}
               />
             </>
