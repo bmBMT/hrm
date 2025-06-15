@@ -2,7 +2,7 @@ import { readFile } from 'fs/promises';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import handlebars from 'handlebars';
-import puppeteer from 'puppeteer-core';
+import puppeteer from 'puppeteer';
 import dayjs from 'dayjs';
 import 'dayjs/locale/ru.js';
 
@@ -29,10 +29,8 @@ export async function generatePdfFromHbs(
 		const html = handlebars.compile(templateHtml)(tamplateData);
 
 		const browser = await puppeteer.launch({
-			headless: false,
-			args: ['--disable-gpu', '--disable-setuid-sandbox', '--no-sandbox', '--no-zygote'],
-			executablePath: '/usr/bin/chromium-browser',
-			ignoreDefaultArgs: ["--disable-extensions"],
+			// headless: true,
+			// args: ['--disable-setuid-sandbox', '--no-sandbox'],
 		});
 
 		const page = await browser.newPage();
