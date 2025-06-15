@@ -29,7 +29,8 @@ export async function generatePdfFromHbs(
 		const html = handlebars.compile(templateHtml)(tamplateData);
 
 		const browser = await puppeteer.launch({
-			args: ['--no-sandbox', '--disable-setuid-sandbox'],
+			headless: false,
+			args: ['--disable-gpu', '--disable-setuid-sandbox', '--no-sandbox', '--no-zygote'],
 			executablePath: '/usr/bin/chromium-browser',
 			ignoreDefaultArgs: ["--disable-extensions"],
 		});
