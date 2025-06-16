@@ -37,7 +37,7 @@ export async function generatePdfFromHbs(
 		await page.goto(`file://${templatePath}`);
 		await page.setContent(html, { waitUntil: 'networkidle0' });
 
-		const pathPdf = `server_static/pdf/${dayjs().format('DD.MM.YYYY_HH:mm')}_ww.pdf`;
+		const pathPdf = `server_static/pdf/${dayjs().format('DD.MM.YYYY_HH:mm')}.pdf`;
 		await page.pdf({
 			path: pathPdf,
 			format: 'A4',
