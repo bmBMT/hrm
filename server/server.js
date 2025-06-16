@@ -21,7 +21,7 @@ app.use(bodyParser.json({ limit: "20mb" }));
 app.use(express.json());
 app.use(cookieParser());
 
-app.use('/server_static', express.static(path.join(__dirname, 'static')))
+app.use('/server_static', express.static(path.join(__dirname, 'server_static')))
 
 // simple route
 app.get("/", (req, res) => {
