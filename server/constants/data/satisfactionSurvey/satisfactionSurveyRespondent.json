@@ -1,7 +1,7 @@
 [
   {
-    "name": "Iosep Brammer",
-    "teamName": "Development",
+    "name": "Иосиф Браммеров",
+    "teamName": "Разработка",
     "surveyId": 1,
     "empId": 11,
     "accessToken": null,
@@ -10,8 +10,8 @@
     "completedAt": null
   },
   {
-    "name": "Benita Ridgeway",
-    "teamName": "Marketing",
+    "name": "Белла Ридовая",
+    "teamName": "Маркетинг",
     "surveyId": 1,
     "empId": 12,
     "accessToken": null,
@@ -20,8 +20,8 @@
     "completedAt": "2025-11-09T15:50:07.573Z"
   },
   {
-    "name": "Arlan Savege",
-    "teamName": "Business Development",
+    "name": "Арсений Савельев",
+    "teamName": "Бизнес-развитие",
     "surveyId": 1,
     "empId": 13,
     "accessToken": null,
@@ -30,8 +30,8 @@
     "completedAt": "2024-04-04T15:49:40.495Z"
   },
   {
-    "name": "Trueman Gabriely",
-    "teamName": "Development",
+    "name": "Трофим Гаврилов",
+    "teamName": "Разработка",
     "surveyId": 1,
     "empId": 14,
     "accessToken": null,
@@ -40,8 +40,8 @@
     "completedAt": null
   },
   {
-    "name": "Aaron Grube",
-    "teamName": "Business Development",
+    "name": "Арон Грубов",
+    "teamName": "Бизнес-развитие",
     "surveyId": 1,
     "empId": 15,
     "accessToken": null,
@@ -50,8 +50,8 @@
     "completedAt": "2026-01-22T19:03:28.600Z"
   },
   {
-    "name": "Bear Sullly",
-    "teamName": "Development",
+    "name": "Михаил Сулин",
+    "teamName": "Разработка",
     "surveyId": 1,
     "empId": 16,
     "accessToken": null,
@@ -60,8 +60,8 @@
     "completedAt": "2025-04-06T14:55:02.499Z"
   },
   {
-    "name": "Andeee Candlish",
-    "teamName": "Management",
+    "name": "Анна Кандилина",
+    "teamName": "Менеджмент",
     "surveyId": 1,
     "empId": 17,
     "accessToken": null,
@@ -70,8 +70,8 @@
     "completedAt": null
   },
   {
-    "name": "Nester Pawelczyk",
-    "teamName": "Legal",
+    "name": "Нестор Павлов",
+    "teamName": "Юридический",
     "surveyId": 1,
     "empId": 18,
     "accessToken": null,
@@ -80,8 +80,8 @@
     "completedAt": "2024-12-10T12:09:22.831Z"
   },
   {
-    "name": "Nicoli Krolik",
-    "teamName": "Business Development",
+    "name": "Николай Кроликов",
+    "teamName": "Бизнес-развитие",
     "surveyId": 1,
     "empId": 19,
     "accessToken": null,
@@ -90,8 +90,8 @@
     "completedAt": "2024-02-02T16:49:54.708Z"
   },
   {
-    "name": "Kettie Nortcliffe",
-    "teamName": "Development",
+    "name": "Екатерина Северцева",
+    "teamName": "Разработка",
     "surveyId": 1,
     "empId": 20,
     "accessToken": null,

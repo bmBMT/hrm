@@ -391,6 +391,7 @@ exports.createRecord = async (req, res) => {
     }
     // Assign time off to new employee
     assignTimeOffToEmployee(empId);
+    res.status(200).json({ user });
   } catch (err) {
     console.log(err);
     res.send(err);

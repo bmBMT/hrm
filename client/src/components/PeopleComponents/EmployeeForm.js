@@ -331,7 +331,6 @@ function GenderSelectTag(props) {
           name={name}
           value={value}
           onChange={handleChange}
-          style={{ width: "30.3774%" }}
           disabled={restricted}
         >
           {options &&
@@ -681,17 +680,17 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
         <Stack spacing={5} sx={{ border: "0px blue solid", width: "100%", minWidth: "100%" }}>
           {/* Personal Information container begins here */}
           <Stack spacing={2.5} sx={containerStyle}>
-            {createSubHead("Personal")}
+            {createSubHead("Сотрудник")}
             <RowStack>
               <CustomisedInput
-                label={"First name"}
+                label={"Имя"}
                 name={"firstName"}
                 value={inputs.firstName || ""}
                 handleChange={handleChange}
                 validator={validator}
               />
               <CustomisedInput
-                label={"Last name"}
+                label={"Фамилия"}
                 name={"lastName"}
                 value={inputs.lastName || ""}
                 handleChange={handleChange}
@@ -700,14 +699,14 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedInput
-                label={"Preferred name"}
+                label={"Сокращенное имя"}
                 name={"preferredName"}
                 value={inputs.preferredName || ""}
                 handleChange={handleChange}
                 validator={validator}
               />
               <GenderSelectTag
-                label={"Gender"}
+                label={"Пол"}
                 name={"gender"}
                 value={inputs.gender || ""}
                 options={selectOptions.gender}
@@ -717,7 +716,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedDatePicker
-                label={"Birth date"}
+                label={"Дата рождения"}
                 name={"dateOfBirth"}
                 value={inputs.dateOfBirth || dayjs().format("MMM D, YYYY")}
                 handleChange={handleChange}
@@ -727,7 +726,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             </RowStack>
             <RowStack>
               <CustomisedSelectTag
-                label={"Nationality"}
+                label={"Национальность"}
                 name={"nationality"}
                 value={inputs.nationality || ""}
                 options={getNationality()}
@@ -735,7 +734,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 validator={validator}
               />
               <CustomisedSelectTag
-                label={"Marital status"}
+                label={"Семейное положение"}
                 name={"maritalStatus"}
                 value={inputs.maritalStatus || ""}
                 options={selectOptions.maritalStatus}
@@ -771,7 +770,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
 
           {/* Contact Information container begins here */}
           <Stack spacing={2.5} sx={containerStyle}>
-            {createSubHead("Job")}
+            {createSubHead("Работа")}
             <RowStack>
               <CustomisedInput
                 label={"Номер телефона"}
@@ -884,7 +883,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
 
           {/* Job Information container begins here */}
           <Stack spacing={2.5} sx={containerStyle}>
-            {createSubHead("Job")}
+            {createSubHead("Работа")}
             <RowStack>
               <CustomisedDatePicker
                 label={"Дата приема на работу"}
@@ -1003,7 +1002,7 @@ const validateName = (fieldName, name) => {
     return { valid: false, message: `Please, enter ${fieldName}.` };
   }
   name = name.trim();
-  const regex = /^[a-zA-Z\-\']+$/;
+  const regex = /^[а-яА-Я\-\']+$/;
   if (!regex.test(name)) {
     return {
       valid: false,
@@ -1047,7 +1046,7 @@ const validateName = (fieldName, name) => {
     };
   }
 
-  if (name.charCodeAt(0) < 65 || name.charCodeAt(0) > 90) {
+  if (name.toLowerCase() === name) {
     return {
       valid: false,
       message: `${fieldName} должен начинатся с большой буквы.`,
